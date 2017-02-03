@@ -21,12 +21,3 @@ $ make
 # Mac OS X
 $ make osx
 ```
-
-## Additional steps
-
-Linking SublimeText configuration
-
-```shell
-$ rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-$ ln -s ~/.sublime_config ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-```
