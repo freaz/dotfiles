@@ -1,7 +1,8 @@
 BREW=/usr/local/bin/brew
 BREW_BUNDLE=/usr/local/Homebrew/Library/Taps/homebrew/homebrew-bundle
+NVM=~/.nvm/nvm.sh
 
-all: oh-my-zsh
+all: oh-my-zsh $(NVM)
 osx: homebrew-packages all
 
 $(BREW):
@@ -10,6 +11,9 @@ $(BREW):
 
 $(BREW_BUNDLE): $(BREW)
 	brew tap Homebrew/bundle
+
+$(NVM): 
+	@sh -c "`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh`"
 
 .PHONY: oh-my-zsh-repo
 oh-my-zsh-repo: $(BREW_BUNDLE)
