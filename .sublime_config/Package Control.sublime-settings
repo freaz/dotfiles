@@ -1,0 +1,33 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Babel",
+		"Better CoffeeScript",
+		"Bracketeer",
+		"BracketHighlighter",
+		"DashDoc",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"EditorConfig",
+		"Emmet",
+		"Git",
+		"Git Commit Message Syntax",
+		"GitGutter",
+		"Monokai Extended",
+		"Package Control",
+		"PHP Companion",
+		"PHP-Twig",
+		"SCSS",
+		"SideBarEnhancements",
+		"Stylus",
+		"SublimeLinter",
+		"SublimeLinter-coffee",
+		"SublimeLinter-contrib-eslint",
+		"Vue Syntax Highlight"
+	]
+}
