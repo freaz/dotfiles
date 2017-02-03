@@ -1,0 +1,36 @@
+[user]
+    name = Ondřej Musil
+    email = omusil@gmail.com
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    ds = diff --staged
+    lg = log -p
+    lgo = log --oneline
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+    ls = ls-files
+    personal = config user.email \"omusil@gmail.com\"
+    designeo = config user.email \"ondrej.musil@designeo.cz\"
+    apiary = config user.email \"ondra@apiary.io\"
+[core]
+    ; editor = vim
+    ; editor = atom --wait
+    editor = sublime -n -w
+[credential]
+    helper = osxkeychain
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+[filter "hawser"]
+    clean = git hawser clean %f
+    smudge = git hawser smudge %f
+    required = true
+[filter "lfs"]
+    clean = git lfs clean %f
+    smudge = git lfs smudge %f
+    required = true
+[commit]
+	gpgsign = true
