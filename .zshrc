@@ -79,6 +79,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Aliases
 alias zshconfig="s ~/.zshrc"
+alias home="git --work-tree=$HOME --git-dir=$HOME/.files.git"
 alias docker-clean-containers='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
 alias docker-clean-images='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
 alias docker-clean="docker-clean-containers; docker-clean-images"
