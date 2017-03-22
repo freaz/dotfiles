@@ -8,6 +8,7 @@ brew 'heroku'
 brew 'vim'
 brew 'wget'
 brew 'zsh'
+brew 'trash'
 
 cask 'docker'
 cask 'google-chrome'
