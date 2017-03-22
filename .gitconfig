@@ -1,6 +1,5 @@
 [user]
-    name = Ondřej Musil
-    email = omusil@gmail.com
+    userconfigonly = true
 [alias]
     st = status
     ci = commit
@@ -13,9 +12,9 @@
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
     ls = ls-files
-    personal = config user.email \"omusil@gmail.com\"
-    designeo = config user.email \"ondrej.musil@designeo.cz\"
-    apiary = config user.email \"ondra@apiary.io\"
+    personal = !git config user.name \"Ondřej Musil\" && git config user.email \"omusil@gmail.com\"
+    apiary = !git config user.name \"Ondřej Musil\" && git config user.email \"ondra@apiary.io\"
+    designeo = !git config user.name \"Ondřej Musil\" && git config user.email \"ondrej.musil@designeo.cz\"
 [core]
     ; editor = vim
     ; editor = atom --wait
