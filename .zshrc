@@ -88,6 +88,7 @@ alias dlogin='eval $(aws ecr get-login)'
 alias sublime=subl
 alias s=subl
 alias gpg-ls="gpg --list-secret-keys --keyid-format LONG"
+alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
 
 # Workspace Aliases
 alias ws-apiary="cd ~/Workspaces/Apiary"
