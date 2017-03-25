@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/freaz/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -85,8 +85,8 @@ alias docker-clean-images='printf "\n>>> Deleting untagged images\n\n" && docker
 alias docker-clean="docker-clean-containers; docker-clean-images"
 alias drafter="/Users/freaz/Workspaces/Apiary/drafter/bin/drafter"
 alias dlogin='eval $(aws ecr get-login)'
-alias s=sublime
-alias subl=sublime
+alias sublime=subl
+alias s=subl
 alias gpg-ls="gpg --list-secret-keys --keyid-format LONG"
 
 # Workspace Aliases

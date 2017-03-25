@@ -18,9 +18,8 @@ function ruby_version() {
 }
 
 ### HEROKU
-local heroku_cmd=/usr/local/bin/heroku
 function heroku_active_account() {
-  echo "heroku:($($heroku_cmd accounts | sed -n '/^\*.*/p' | sed -e 's/^\* //'))"
+  echo "heroku:($(heroku accounts | sed -n '/^\*.*/p' | sed -e 's/^\* //'))"
 }
 
 function show_datetime() {
