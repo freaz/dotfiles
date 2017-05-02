@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"DashDoc"
 	],
 	"installed_packages":
 	[
@@ -11,7 +10,6 @@
 		"Better CoffeeScript",
 		"Bracketeer",
 		"BracketHighlighter",
-		"DashDoc",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
