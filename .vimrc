@@ -1,1 +1,1 @@
-/Users/freaz/.vim/init.vim
+.vim/init.vim
