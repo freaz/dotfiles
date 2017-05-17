@@ -56,6 +56,9 @@ set title
 set mouse=a
 set shortmess=Ia
 
+" Keybindings
+set backspace=indent,eol,start
+
 " Formatting
 set tabstop=4 " Use 4 spaces to a tab
 set shiftwidth=4 " As above
