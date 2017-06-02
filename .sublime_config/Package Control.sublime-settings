@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"API Blueprint",
 		"Babel",
 		"Better CoffeeScript",
 		"Bracketeer",
