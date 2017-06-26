@@ -27,6 +27,7 @@ $(NVM):
 $(VUNDLE):
 	@echo Cloning Vundle.vim
 	@git clone https://github.com/VundleVim/Vundle.vim.git $(VUNDLE)
+	@vim +PluginInstall +qall
 
 $(SUBLIME_OSX):
 	ln -s ~/.sublime_config $(SUBLIME_OSX)
