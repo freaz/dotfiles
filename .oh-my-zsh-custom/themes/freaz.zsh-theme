@@ -27,4 +27,4 @@ function show_datetime() {
 }
 
 PROMPT='$(show_datetime) %{$fg[cyan]%}%c%{$reset_color%}$(git_prompt_info) %B$%b%{$reset_color%} '
-RPROMPT='$(nvm_info) $(ruby_version) $(heroku_active_account)'
+RPROMPT='$(nvm_info)'
