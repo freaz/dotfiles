@@ -12,9 +12,9 @@
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
     ls = ls-files
+    gpg = config user.signingkey
     personal = !git config user.name \"Ondřej Musil\" && git config user.email \"omusil@gmail.com\"
     apiary = !git config user.name \"Ondřej Musil\" && git config user.email \"ondra@apiary.io\"
-    designeo = !git config user.name \"Ondřej Musil\" && git config user.email \"ondrej.musil@designeo.cz\"
 [core]
     ; editor = vim
     ; editor = atom --wait
