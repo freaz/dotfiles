@@ -90,6 +90,12 @@ alias s=subl
 alias gpg-ls="gpg --list-secret-keys --keyid-format LONG"
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
 
+# Docker services
+alias docker-postgres='docker run --rm -it --name pg -p 5432:5432 -v ~/DockerVolumes/postgres_data:/var/lib/postgresql/data -d postgres'
+alias docker-postgres-connect='docker run --rm -it --link pg postgres psql -h pg -U postgres'
+alias docker-redis='docker run --rm -it --name redis -p 6379:6379 -v ~/DockerVolumes/redis_data:/data -d redis redis-server --appendonly yes'
+alias docker-redis-connect='docker run --rm -it --link redis redis redis-cli -h redis'
+
 # Workspace Aliases
 alias ws-apiary="cd ~/Workspaces/Apiary"
 
