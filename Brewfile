@@ -1,5 +1,6 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
+tap 'caskroom/fonts'
 
 brew 'awscli'
 brew 'git'
@@ -19,3 +20,5 @@ cask 'visual-studio-code'
 cask 'iterm2'
 cask 'gpgtools'
 
+# Fonts
+cask 'font-source-code-pro'
