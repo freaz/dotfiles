@@ -17,9 +17,10 @@
     apiary = !git config user.name \"Ondřej Musil\" && git config user.email \"ondra@apiary.io\"
     oracle = !git config user.name \"Ondřej Musil\" && git config user.email \"ondrej.musil@oracle.com\"
 [core]
-    ; editor = vim
     ; editor = code --wait
-    editor = subl -n -w
+    ; editor = subl -n -w
+    editor = vim
+
     excludesfile = /Users/freaz/.gitignore_global
 [credential]
     helper = osxkeychain
