@@ -16,7 +16,6 @@ cask 'google-chrome'
 cask 'paw'
 cask 'sublime-text'
 cask 'visual-studio-code'
-cask 'flux'
 cask 'iterm2'
-cask 'virtualbox'
+cask 'gpgtools'
 
