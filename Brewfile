@@ -19,6 +19,8 @@ cask 'sublime-text'
 cask 'visual-studio-code'
 cask 'iterm2'
 cask 'gpgtools'
+cask 'keybase'
+cask 'tunnelbear'
 
 # Fonts
 cask 'font-source-code-pro'
