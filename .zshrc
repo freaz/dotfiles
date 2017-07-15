@@ -80,24 +80,21 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias zshconfig="s ~/.zshrc"
 alias home="git --work-tree=$HOME --git-dir=$HOME/.files.git"
-alias docker-clean-containers='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
-alias docker-clean-images='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
-alias docker-clean="docker-clean-containers; docker-clean-images"
-alias drafter="/Users/freaz/Workspaces/Apiary/drafter/bin/drafter"
-alias dlogin='eval $(aws ecr get-login)'
 alias sublime=subl
 alias s=subl
 alias gpg-ls="gpg --list-secret-keys --keyid-format LONG"
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
 
-# Docker services
+# Docker Aliases
+alias docker-clean-containers='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
+alias docker-clean-images='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
+alias docker-clean="docker-clean-containers; docker-clean-images"
+
+# Docker Services
 alias docker-postgres='docker run --rm -it --name pg -p 5432:5432 -v ~/DockerVolumes/postgres_data:/var/lib/postgresql/data -d postgres'
 alias docker-postgres-connect='docker run --rm -it --link pg postgres psql -h pg -U postgres'
 alias docker-redis='docker run --rm -it --name redis -p 6379:6379 -v ~/DockerVolumes/redis_data:/data -d redis redis-server --appendonly yes'
 alias docker-redis-connect='docker run --rm -it --link redis redis redis-cli -h redis'
-
-# Workspace Aliases
-alias ws-apiary="cd ~/Workspaces/Apiary"
 
 # paths
 export PATH="/usr/local/sbin:$PATH"
@@ -108,12 +105,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# Own variables
-export PARSING_SERVICE_URL="http://localhost:9090"
-
-# Webpack hack
-ulimit -n 10000
 
 # Credentials
 source $HOME/.credentials
