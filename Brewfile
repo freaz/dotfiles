@@ -22,6 +22,7 @@ cask 'iterm2'
 cask 'gpgtools'
 cask 'keybase'
 cask 'tunnelbear'
+cask 'amethyst'
 
 # Fonts
 cask 'font-source-code-pro'
