@@ -23,6 +23,7 @@ cask 'gpgtools'
 cask 'keybase'
 cask 'tunnelbear'
 cask 'amethyst'
+cask 'hyper'
 
 # Fonts
 cask 'font-source-code-pro'
