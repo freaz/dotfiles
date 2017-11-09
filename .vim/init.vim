@@ -34,8 +34,8 @@ Plugin 'elzr/vim-json'
 Plugin 'sjl/vitality.vim'
 " A Vim plugin which shows a git diff in the gutter
 Plugin 'airblade/vim-gitgutter'
-" A colorful, dark color scheme for Vim
-Plugin 'nanotech/jellybeans.vim'
+" Drakula colorscheme
+Plugin 'dracula/vim'
 
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/freaz/.vim/ownplugin'
@@ -46,8 +46,9 @@ filetype plugin indent on    " required
 
 " Appearance
 language en_US.UTF-8
-color jellybeans
 syntax on
+color dracula
+
 set showmode
 set hidden " Handle multiple buffers better
 set number " Show line numbers
@@ -60,8 +61,8 @@ set shortmess=Ia
 set backspace=indent,eol,start
 
 " Formatting
-set tabstop=4 " Use 4 spaces to a tab
-set shiftwidth=4 " As above
+set tabstop=2 " Use 4 spaces to a tab
+set shiftwidth=2 " As above
 set expandtab " Expand tabs into spaces
 
 " Completion
@@ -99,6 +100,9 @@ endfunction
 " " (even in tmux)
 autocmd FocusLost * :call PBCopy()
 autocmd FocusGained * :call PBPaste()
+
+" 
+set t_RV=
 
 " Key mapping
 map <C-o> :NERDTreeToggle<CR>
