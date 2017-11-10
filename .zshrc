@@ -78,12 +78,13 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Aliases
-alias zshconfig="s ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 alias home="git --work-tree=$HOME --git-dir=$HOME/.files.git"
 alias sublime=subl
 alias s=subl
 alias gpg-ls="gpg --list-secret-keys --keyid-format LONG"
 alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias npm-installed="npm list -g --depth=0"
 
 # Docker Aliases
 alias docker-clean-containers='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
