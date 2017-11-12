@@ -71,6 +71,10 @@ set completeopt=menu
 set wildmenu " Better completion in the CLI
 set wildmode=longest:full,full " Completion settings
 
+" Editing
+set showmatch
+set matchtime=3
+
 " Search
 set hlsearch " Highlight all search matches
 set incsearch " Highlight matches as you type
