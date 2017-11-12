@@ -22,7 +22,6 @@ cask 'iterm2'
 cask 'gpgtools'
 cask 'keybase'
 cask 'tunnelbear'
-cask 'amethyst'
 cask 'hyper'
 
 # Fonts
