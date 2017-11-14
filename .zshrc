@@ -50,6 +50,10 @@ plugins=(git git-extras brew brew-cask gem bundler rails zsh-syntax-highlighting
 
 # User configuration
 
+# Credentials
+CREDENTIALS=$HOME/.credentials
+[[ -f $CREDENTIALS ]] && source $CREDENTIALS
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -107,5 +111,3 @@ export NVM_DIR="$HOME/.nvm"
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Credentials
-source $HOME/.credentials
