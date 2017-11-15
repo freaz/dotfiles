@@ -36,6 +36,9 @@ Plugin 'sjl/vitality.vim'
 Plugin 'airblade/vim-gitgutter'
 " Drakula colorscheme
 Plugin 'dracula/vim'
+" Gists suppoer
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
 
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/freaz/.vim/ownplugin'
