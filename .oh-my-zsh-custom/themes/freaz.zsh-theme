@@ -26,5 +26,5 @@ function show_datetime() {
   echo "%{$fg_bold[green]%}[$(date +%Y-%m-%dT%H:%M:%S)]%{$reset_color%}"
 }
 
-PROMPT='$(show_datetime) %{$fg[cyan]%}%c%{$reset_color%}$(git_prompt_info) %B$%b%{$reset_color%} '
+PROMPT='%{$bg[green]$fg[black]%} %c %{$reset_color%}$(git_prompt_info) %B$%b%{$reset_color%} '
 RPROMPT='$(nvm_info)'
