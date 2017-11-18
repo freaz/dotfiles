@@ -103,6 +103,7 @@ alias docker-redis-connect='docker run --rm -it --link redis redis redis-cli -h 
 
 # paths
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:$(python3 -m site --user-base)/bin" # Python3 user base
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
