@@ -13,6 +13,7 @@ brew 'zsh'
 brew 'zsh-completions'
 brew 'trash'
 brew 'node'
+brew 'python3'
 
 cask 'docker'
 cask 'google-chrome'
