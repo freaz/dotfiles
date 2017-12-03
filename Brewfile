@@ -1,6 +1,5 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
-tap 'caskroom/fonts'
 
 brew 'awscli'
 brew 'git'
@@ -27,5 +26,3 @@ cask 'keybase'
 cask 'tunnelbear'
 cask 'hyper'
 
-# Fonts
-cask 'font-source-code-pro'
