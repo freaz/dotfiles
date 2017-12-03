@@ -17,6 +17,7 @@ brew 'python3'
 
 cask 'docker'
 cask 'google-chrome'
+cask 'firefox'
 cask 'paw'
 cask 'sublime-text'
 cask 'visual-studio-code'
