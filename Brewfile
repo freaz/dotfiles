@@ -14,6 +14,7 @@ brew 'zsh-completions'
 brew 'trash'
 brew 'node'
 brew 'python3'
+brew 'rtv'
 
 cask 'docker'
 cask 'google-chrome'
