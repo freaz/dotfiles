@@ -36,7 +36,9 @@ Plugin 'sjl/vitality.vim'
 Plugin 'airblade/vim-gitgutter'
 " Drakula colorscheme
 Plugin 'dracula/vim'
-" Gists suppoer
+" Emmet
+Plugin 'mattn/emmet-vim'
+" Gists support
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 
