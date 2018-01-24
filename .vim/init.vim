@@ -20,8 +20,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 " fuzzy search
 Plugin 'kien/ctrlp.vim'
-" coffee support
-Plugin 'kchmck/vim-coffee-script'
 " Go development plugin for Vim
 Plugin 'fatih/vim-go'
 " EditorConfig plugin for Vim http://editorconfig.org
