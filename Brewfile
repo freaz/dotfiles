@@ -29,6 +29,7 @@ cask 'gpgtools'
 cask 'keybase'
 cask 'tunnelbear'
 cask 'hyper'
+cask 'tg-pro'
 
 mas 'Bear', id: 1091189122
 mas 'Things 3', id: 904280696
