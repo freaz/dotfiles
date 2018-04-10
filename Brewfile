@@ -17,6 +17,7 @@ brew 'python3'
 brew 'rtv'
 brew 'mas'
 
+cask '1password'
 cask 'docker'
 cask 'google-chrome'
 cask 'firefox'
@@ -28,4 +29,8 @@ cask 'gpgtools'
 cask 'keybase'
 cask 'tunnelbear'
 cask 'hyper'
+
+mas 'Bear', id: 1091189122
+mas 'Things 3', id: 904280696
+mas 'Magnet', id: 441258766
 
