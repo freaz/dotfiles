@@ -15,6 +15,7 @@ brew 'trash'
 brew 'node'
 brew 'python3'
 brew 'rtv'
+brew 'mas'
 
 cask 'docker'
 cask 'google-chrome'
