@@ -49,9 +49,11 @@ filetype plugin indent on    " required
 
 " Appearance
 language en_US.UTF-8
+let g:dracula_colorterm=0
+colorscheme dracula
 syntax on
-color dracula
 
+set termguicolors
 set showmode
 set hidden " Handle multiple buffers better
 set number " Show line numbers
