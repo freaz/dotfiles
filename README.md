@@ -26,3 +26,9 @@ $ make
 # Mac OS X
 $ make osx
 ```
+
+### Sublime
+
+On first time use `Sublime Package Control` must be installed.
+
+Press `CMD + SHIFT + P`, type `Install Package Control` and confirm by pressing `Enter`.
