@@ -6,6 +6,8 @@ OH_MY_ZSH=~/.oh-my-zsh
 ZSH_SYNTAX_HIGHLIGHTING=~/.oh-my-zsh-custom/plugins/zsh-syntax-highlighting
 SUBLIME_OSX=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 SUBLIME_DEBIAN=~/.config/sublime-text-3/Packages/User
+TMUX=~/.tmux
+TMUX_TPM=~/.tmux/plugins/tpm
 
 all: $(OH_MY_ZSH) $(ZSH_SYNTAX_HIGHLIGHTING) $(NVM) $(VUNDLE)
 osx: homebrew-packages all $(SUBLIME_OSX)
@@ -42,6 +44,12 @@ $(ZSH_SYNTAX_HIGHLIGHTING): $(OH_MY_ZSH)
 $(OH_MY_ZSH):
 	@echo Installing oh-my-zsh
 	@sh -c "`curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh`"
+
+$(TMUX_TPM):
+	@git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+$(TMUX): $(TMUX_TPM)
+	@echo Preparing TMUX
 
 homebrew-packages: $(BREW_BUNDLE)
 	brew bundle
