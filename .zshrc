@@ -93,6 +93,7 @@ alias s=subl
 alias gpg-ls='gpg --list-secret-keys --keyid-format LONG'
 alias npm-installed='npm list -g --depth=0'
 alias 1password='eval $(op signin my)'
+alias pretty-json='python -m json.tool'
 
 # Docker Aliases
 alias docker-clean-containers='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
