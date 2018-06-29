@@ -2,6 +2,7 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 
 brew 'awscli'
+brew 'doctl'
 brew 'git'
 brew 'git-extras'
 brew 'hub'
