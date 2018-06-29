@@ -50,7 +50,29 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras brew brew-cask gem bundler rails zsh-syntax-highlighting history-substring-search node nvm coffee composer docker docker-compose heroku)
+plugins=(
+  # Terminal
+  zsh-syntax-highlighting
+  history-substring-search
+  # Git 
+  git
+  git-extras
+  # Homebrew
+  brew
+  brew-cask
+  # Ruby
+  gem
+  bundler
+  rails
+  # Nodejs
+  node
+  nvm
+  # Docker
+  docker
+  docker-compose
+  # Other
+  heroku
+ )
 
 # User configuration
 
@@ -114,6 +136,13 @@ export PATH="$PATH:$(python3 -m site --user-base)/bin" # Python3 user base
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
+# rbenv
+eval "$(rbenv init -)"
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Google Cloud SDK
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
