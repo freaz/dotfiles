@@ -2,12 +2,12 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Stylus"
 	],
 	"installed_packages":
 	[
 		"All Autocomplete",
 		"API Blueprint",
-		"Babel",
 		"Bracketeer",
 		"BracketHighlighter",
 		"DashDoc",
@@ -21,12 +21,10 @@
 		"Git",
 		"Git Commit Message Syntax",
 		"GitGutter",
-		"Monokai Extended",
 		"Package Control",
 		"Pretty JSON",
 		"SCSS",
 		"SideBarEnhancements",
-		"Stylus",
 		"SublimeLinter",
 		"SublimeLinter-eslint",
 		"Vue Syntax Highlight"

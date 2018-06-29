@@ -17,6 +17,7 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Stylus",
 		"Vintage"
 	],
 	"line_padding_bottom": 1.8,
