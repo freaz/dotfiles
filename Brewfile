@@ -33,6 +33,7 @@ cask 'tunnelbear'
 cask 'hyper'
 cask 'tg-pro'
 cask 'dash'
+cask 'google-cloud-sdk'
 
 mas 'Bear', id: 1091189122
 mas 'Things 3', id: 904280696
