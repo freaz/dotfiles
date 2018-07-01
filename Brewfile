@@ -17,6 +17,7 @@ brew 'node'
 brew 'python3'
 brew 'rtv'
 brew 'mas'
+brew 'rbenv'
 
 cask '1password'
 cask 'docker'
