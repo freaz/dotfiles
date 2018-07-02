@@ -118,9 +118,17 @@ alias 1password='eval $(op signin my)'
 alias pretty-json='python -m json.tool'
 
 # Docker Aliases
+alias dm='docker-machine'
+alias dm-reset="eval $(dm env -u)"
+alias dc='docker-compose'
 alias docker-clean-containers='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
 alias docker-clean-images='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
 alias docker-clean="docker-clean-containers; docker-clean-images"
+
+# Docker functions
+dm-activate () {
+  eval "$(dm env $1)"
+}
 
 # Docker Services
 alias docker-postgres='docker run --rm -it --name pg -p 5432:5432 -v ~/.docker-volumes/postgres_data:/var/lib/postgresql/data -d postgres'
