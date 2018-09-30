@@ -121,13 +121,19 @@ alias pretty-json='python -m json.tool'
 alias dm='docker-machine'
 alias dm-reset="eval $(dm env -u)"
 alias dc='docker-compose'
-alias docker-clean-containers='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
-alias docker-clean-images='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
-alias docker-clean="docker-clean-containers; docker-clean-images"
 
 # Docker functions
-dm-activate () {
+dm-activate() {
   eval "$(dm env $1)"
+}
+
+docker-rename-volume() {
+  OLD_VOLUME=$1
+  NEW_VOLUME=$2
+
+  docker volume create --name $NEW_VOLUME
+  docker run --rm -it -v $OLD_VOLUME:/from -v $NEW_VOLUME:/to alpine ash -c "cd /from ; cp -av . /to"
+  docker volume rm $OLD_VOLUME
 }
 
 # Docker Services
