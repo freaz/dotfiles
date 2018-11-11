@@ -37,4 +37,4 @@ function show_datetime() {
 }
 
 PROMPT='%{$bg[green]$fg[black]%} %c %{$reset_color%}$(git_prompt_info) %B$%b%{$reset_color%} '
-RPROMPT='$(docker_info) $(nvm_info)'
+RPROMPT='$(docker_info) $(nvm_info) $(ruby_version)'
