@@ -17,7 +17,7 @@
     personal = !git config user.name \"Ondřej Musil\" && git config user.email \"omusil@gmail.com\"
     oracle = !git config user.name \"Ondřej Musil\" && git config user.email \"ondrej.musil@oracle.com\"
 [core]
-    editor = vim
+    editor = code --wait
     excludesfile = /Users/freaz/.gitignore_global
 [credential]
     helper = osxkeychain
@@ -28,6 +28,6 @@
 [commit]
     gpgsign = true
 [github]
-	  user = freaz
+    user = freaz
 [gpg]
-	program = gpg
+    program = gpg
