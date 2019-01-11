@@ -37,6 +37,7 @@ cask 'keybase'
 cask 'tunnelbear'
 cask 'tg-pro'
 cask 'dash'
+cask 'now'
 cask 'google-cloud-sdk'
 
 mas 'Bear', id: 1091189122
