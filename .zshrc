@@ -85,6 +85,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 
+# zsh plugins
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/etc/profile.d/z.sh
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
