@@ -29,5 +29,3 @@
     gpgsign = true
 [github]
     user = freaz
-[gpg]
-    program = gpg
