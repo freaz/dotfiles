@@ -1,4 +1,4 @@
-# Set Language
+# Se/ Language
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 
@@ -125,6 +125,8 @@ alias pretty-json='python -m json.tool'
 alias dm='docker-machine'
 alias dm-reset="eval $(dm env -u)"
 alias dc='docker-compose'
+alias dr='docker run --rm -it'
+alias docker-clean-containers="docker ps -a | grep Exited | awk '{print $1}' | xargs docker rm"
 
 # Docker functions
 dm-activate() {
