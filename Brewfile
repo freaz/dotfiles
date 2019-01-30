@@ -42,6 +42,10 @@ cask 'dash'
 cask 'now'
 cask 'google-cloud-sdk'
 
+cask 'qlcolorcode'
+cask 'qlstephen'
+cask 'quicklook-json'
+
 mas 'XCode', id: 497799835
 mas 'Bear', id: 1091189122
 mas 'Things 3', id: 904280696
