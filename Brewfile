@@ -42,6 +42,7 @@ cask 'dash'
 cask 'now'
 cask 'google-cloud-sdk'
 
+mas 'XCode', id: 497799835
 mas 'Bear', id: 1091189122
 mas 'Things 3', id: 904280696
 mas 'Magnet', id: 441258766
