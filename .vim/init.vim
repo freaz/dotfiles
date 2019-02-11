@@ -20,8 +20,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 " fuzzy search
 Plugin 'kien/ctrlp.vim'
-" Go development plugin for Vim
-Plugin 'fatih/vim-go'
 " EditorConfig plugin for Vim http://editorconfig.org
 Plugin 'editorconfig/editorconfig-vim'
 " VIM airline
@@ -39,6 +37,9 @@ Plugin 'mattn/emmet-vim'
 " Gists support
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
+" Language
+Plugin 'kylef/apiblueprint.vim'
+Plugin 'leafgarland/typescript-vim'
 
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/freaz/.vim/ownplugin'
