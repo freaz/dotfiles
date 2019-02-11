@@ -40,6 +40,7 @@ Plugin 'mattn/gist-vim'
 " Language
 Plugin 'kylef/apiblueprint.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'ekalinin/dockerfile.vim'
 
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/freaz/.vim/ownplugin'
