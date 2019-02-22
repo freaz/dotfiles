@@ -6,14 +6,16 @@ OH_MY_ZSH=~/.oh-my-zsh
 ZSH_SYNTAX_HIGHLIGHTING=~/.oh-my-zsh-custom/plugins/zsh-syntax-highlighting
 SUBLIME_OSX=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 SUBLIME_DEBIAN=~/.config/sublime-text-3/Packages/User
+VSCODE_SETTINGS_OSX=~/Library/Application\ Support/Code/User
+VSCODE_SETTINGS_DEBIAN=~/.config/Code/User/settings.json
 TMUX=~/.tmux
 TMUX_TPM=~/.tmux/plugins/tpm
 
 all: $(OH_MY_ZSH) $(ZSH_SYNTAX_HIGHLIGHTING) $(NVM) $(VUNDLE)
-osx: homebrew-packages all $(SUBLIME_OSX)
+osx: homebrew-packages all $(VSCODE_SETTINGS_OSX) $(SUBLIME_OSX)
 debian: debian-packages all $(SUBLIME_DEBIAN)
 
-.PHONY: homebrew-packages debian-packages all
+.PHONY: homebrew-packages debian-packages vscode-extensions all
 
 $(BREW):
 	@echo Installing Homebrew
@@ -36,6 +38,15 @@ $(SUBLIME_OSX):
 
 $(SUBLIME_DEBIAN):
 	ln -s ~/.sublime_config $(SUBLIME_DEBIAN)
+
+vscode-extensions:
+	@sh -c "./.vscode/install-extensions.sh"
+
+$(VSCODE_SETTINGS_OSX):
+	mkdir -p ${VSCODE_SETTINGS_OSX}
+	ln -s ~/.vscode/keybindingsMac.json ${VSCODE_SETTINGS_OSX}/keybindings.json
+	ln -s ~/.vscode/settings.json ${VSCODE_SETTINGS_OSX}/settings.json
+	ln -s ~/.vscode/snippets ${VSCODE_SETTINGS_OSX}/snippets
 
 $(ZSH_SYNTAX_HIGHLIGHTING): $(OH_MY_ZSH)
 	@echo Cloning ZSH Syntax Highlighting

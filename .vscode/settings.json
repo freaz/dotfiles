@@ -1,0 +1,84 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 17,
+    "editor.renderWhitespace": "all",
+    "editor.renderLineHighlight": "all",
+    "editor.tabSize": 2,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "bottom",
+    "editor.rulers": [80],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.renderControlCharacters": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.colorTheme": "Dracula",
+
+    // VIM
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.insert": "#44ce66",
+    "vim.statusBarColors.normal": "#282a36",
+    "vim.statusBarColors.replace": "#7455a0",
+    "vim.statusBarColors.visual": "#ed9a42",
+    "vim.statusBarColors.visualblock": "#ed9a42",
+    "vim.statusBarColors.visualline": "#ed9av2",
+    "vim.useSystemClipboard": true,
+
+    // Terminal
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "terminal.integrated.fontSize": 15,
+    "terminal.external.osxExec": "iTerm.app",
+
+    // Emmet
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx",
+        "vue-html": "html",
+        "vue": "html"
+    },
+
+    // Prettier
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5",
+
+    // Beautify
+    "beautify.ignore": [
+        "**/*.js",
+        "**/*.jsx"
+    ],
+
+    // GitLens
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.keymap": "alternate",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+
+    // Lang specific settings
+
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80,
+        "editor.quickSuggestions": false
+    },
+
+    // Sync
+    "sync.gist": "2bf24fbb538a1ab93e47fa0931634c97",
+    "sync.lastUpload": "2018-06-04T09:11:24.885Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#282a36",
+        "statusBar.noFolderBackground": "#282a36",
+        "statusBar.debuggingBackground": "#282a36"
+    },
+}
