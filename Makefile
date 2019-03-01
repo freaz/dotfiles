@@ -40,7 +40,7 @@ $(SUBLIME_DEBIAN):
 	ln -s ~/.sublime_config $(SUBLIME_DEBIAN)
 
 vscode-extensions:
-	@sh -c "./.vscode/install-extensions.sh"
+	@sh -c "~/.vscode/sync-extensions.sh"
 
 $(VSCODE_SETTINGS_OSX):
 	mkdir -p ${VSCODE_SETTINGS_OSX}
