@@ -1,5 +1,6 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
+tap 'heroku/brew'
 
 brew 'zsh'
 brew 'zsh-completions'
