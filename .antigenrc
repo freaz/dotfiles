@@ -1,0 +1,35 @@
+# Lets start with Oh My ZSH
+antigen use oh-my-zsh
+
+# Other bundles
+
+antigen bundles <<BUNDLES
+  # Terminal
+  zsh-users/zsh-completions
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-syntax-highlighting
+  zsh-users/zsh-history-substring-search
+  rupa/z
+  # Git 
+  git
+  git-extras
+  # Ruby
+  gem
+  bundler
+  rails
+  # Nodejs
+  node
+  nvm
+  # Docker
+  docker
+  docker-compose
+  # Other
+  heroku
+BUNDLES
+
+#antigen theme freaz/dotfiles .oh-my-zsh-custom/themes/freaz
+antigen bundle ~/.zsh/themes freaz.zsh-theme --no-local-clone
+
+# ZSH dependencies ready to install
+antigen apply
+

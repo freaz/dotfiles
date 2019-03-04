@@ -11,6 +11,8 @@ function nvm_info() {
 
 ### Docker
 function docker_info() {
+  which docker-machine > /dev/null || return
+
   ACTIVE_DM=$(dm active 2>&1)
 
   if [ "$ACTIVE_DM" == "No active host found" ]; then
@@ -31,10 +33,10 @@ function heroku_active_account() {
 }
 
 ### Utils
-
 function show_datetime() {
   echo "%{$fg_bold[green]%}[$(date +%Y-%m-%dT%H:%M:%S)]%{$reset_color%}"
 }
 
 PROMPT='%{$bg[green]$fg[black]%} %c %{$reset_color%}$(git_prompt_info) %B$%b%{$reset_color%} '
 RPROMPT='$(docker_info) $(nvm_info) $(ruby_version)'
+

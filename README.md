@@ -8,6 +8,11 @@ On OS X first install Xcode Command Line Tools:
 $ xcode-select --install
 ```
 
+On Debian or Ubuntu install build-essential:
+```shell
+$ sudo apt install build-essential
+```
+
 Cloning the dotfiles:
 
 ```shell
@@ -25,6 +30,9 @@ $ make
 
 # Mac OS X
 $ make osx
+
+# Debian / Ubuntu
+$ make debian
 ```
 
 ### Sublime
