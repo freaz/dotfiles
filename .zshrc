@@ -2,15 +2,6 @@
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 
-# Load and init antigen
-if [[ ! -d ~/.zsh/antigen ]]; then
-  git clone https://github.com/zsh-users/antigen.git ~/.zsh/antigen
-fi
-
-. ~/.zsh/antigen/antigen.zsh
-antigen init ~/.antigenrc
-
-
 # Set name of the theme to load.
 ZSH_CUSTOM=~/.zsh
 COMPLETION_WAITING_DOTS="true"
@@ -21,8 +12,20 @@ ZSH_THEME="freaz"
 CREDENTIALS=$HOME/.credentials
 [[ -f $CREDENTIALS ]] && source $CREDENTIALS
 
+
+# Load and init antigen
+if [[ ! -d ~/.zsh/antigen ]]; then
+  git clone https://github.com/zsh-users/antigen.git ~/.zsh/antigen
+fi
+
+. ~/.zsh/antigen/antigen.zsh
+antigen init ~/.antigenrc
+
+
 # Setup paths
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:$(python3 -m site --user-base)/bin" # Python3 user base
 
 # load z commmands
 # . /usr/local/etc/profile.d/z.sh
@@ -73,10 +76,6 @@ alias docker-postgres='docker run --rm -it --name pg -p 5432:5432 -v ~/.docker-v
 alias docker-postgres-connect='docker run --rm -it --link pg postgres psql -h pg -U postgres'
 alias docker-redis='docker run --rm -it --name redis -p 6379:6379 -v ~/.docker-volumes/redis_data:/data -d redis redis-server --appendonly yes'
 alias docker-redis-connect='docker run --rm -it --link redis redis redis-cli -h redis'
-
-# paths
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$PATH:$(python3 -m site --user-base)/bin" # Python3 user base
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
