@@ -39,6 +39,7 @@ cask 'tg-pro'
 cask 'dash'
 cask 'now'
 cask 'google-cloud-sdk'
+cask 'karabiner-elements'
 
 cask 'qlcolorcode'
 cask 'qlstephen'
