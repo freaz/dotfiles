@@ -5,9 +5,11 @@ eamodio.gitlens
 EditorConfig.EditorConfig
 eg2.vscode-npm-script
 esbenp.prettier-vscode
+GitHub.vscode-pull-request-github
 HookyQR.beautify
 mikestead.dotenv
 ms-python.python
+ms-vscode.sublime-keybindings
 msjsdiag.debugger-for-chrome
 octref.vetur
 PeterJausovec.vscode-docker
@@ -16,4 +18,3 @@ robertohuertasm.vscode-icons
 robinbentley.sass-indented
 spoonscen.es6-mocha-snippets
 sysoev.language-stylus
-vscodevim.vim

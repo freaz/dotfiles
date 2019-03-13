@@ -14,16 +14,6 @@
     "workbench.statusBar.feedback.visible": false,
     "workbench.colorTheme": "Dracula",
 
-    // VIM
-    "vim.statusBarColorControl": true,
-    "vim.statusBarColors.insert": "#44ce66",
-    "vim.statusBarColors.normal": "#282a36",
-    "vim.statusBarColors.replace": "#7455a0",
-    "vim.statusBarColors.visual": "#ed9a42",
-    "vim.statusBarColors.visualblock": "#ed9a42",
-    "vim.statusBarColors.visualline": "#ed9av2",
-    "vim.useSystemClipboard": true,
-
     // Terminal
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
     "terminal.integrated.fontSize": 15,
@@ -75,10 +65,5 @@
     "sync.quietSync": false,
     "sync.askGistName": false,
     "sync.removeExtensions": true,
-    "sync.syncExtensions": true,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#282a36",
-        "statusBar.noFolderBackground": "#282a36",
-        "statusBar.debuggingBackground": "#282a36"
-    },
+    "sync.syncExtensions": true
 }
