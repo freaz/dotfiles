@@ -51,19 +51,5 @@
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80,
         "editor.quickSuggestions": false
-    },
-
-    // Sync
-    "sync.gist": "2bf24fbb538a1ab93e47fa0931634c97",
-    "sync.lastUpload": "2018-06-04T09:11:24.885Z",
-    "sync.autoDownload": false,
-    "sync.autoUpload": false,
-    "sync.lastDownload": "",
-    "sync.forceDownload": false,
-    "sync.host": "",
-    "sync.pathPrefix": "",
-    "sync.quietSync": false,
-    "sync.askGistName": false,
-    "sync.removeExtensions": true,
-    "sync.syncExtensions": true
+    }
 }
