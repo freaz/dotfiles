@@ -1,1 +1,5 @@
-// Empty
+[{
+  "key": "cmd+k",
+  "command": "workbench.action.terminal.clear",
+  "when": "terminalFocus"
+}]
