@@ -12,7 +12,8 @@ module.exports = {
     fontSize: 17,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily:
+      'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -69,7 +70,7 @@ module.exports = {
       lightBlue: '#0066ff',
       lightMagenta: '#cc00ff',
       lightCyan: '#00ffff',
-      lightWhite: '#ffffff'
+      lightWhite: '#ffffff',
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -107,6 +108,22 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+
+    // hyper-pane configuration
+    paneNavigation: {
+      showIndicators: false,
+      hotkeys: {
+        navigation: {
+          up: 'cmd+shift+up',
+          down: 'cmd+shift+down',
+          left: 'cmd+shift+left',
+          right: 'cmd+shift+right'
+        },
+        jump_prefix: 'cmd+shift', // completed with 1-9 digits
+        permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
+        maximize: 'cmd+shift+enter'
+      },
+    },
   },
 
   // a list of plugins to fetch and install from npm
@@ -115,11 +132,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    "hyperline",
-    "hypercwd",
-    "hyper-dracula",
-  ],
+  plugins: ['hyper-pane', 'hypercwd', 'hyper-dracula'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
@@ -129,5 +142,5 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-  }
+  },
 };
