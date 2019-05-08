@@ -40,6 +40,7 @@ cask 'dash'
 cask 'now'
 cask 'google-cloud-sdk'
 cask 'karabiner-elements'
+cask 'postico'
 
 cask 'qlcolorcode'
 cask 'qlstephen'
