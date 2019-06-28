@@ -52,4 +52,5 @@ mas 'Things 3', id: 904280696
 mas 'Magnet', id: 441258766
 mas 'Slack', id: 803453959
 mas 'EasyRes', id: 688211836
+mas 'Medis', id: 1063631769
 
