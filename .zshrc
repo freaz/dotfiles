@@ -26,6 +26,7 @@ antigen init ~/.antigenrc
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$(python3 -m site --user-base)/bin" # Python3 user base
+export PATH="$PATH:$HOME/.cargo/bin" # rust binaries
 
 # load z commmands
 # . /usr/local/etc/profile.d/z.sh
@@ -83,7 +84,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # rbenv
 eval "$(rbenv init -)"
-
 
 # This speeds up pasting w/ autosuggest
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
