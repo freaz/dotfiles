@@ -41,6 +41,7 @@ cask 'now'
 cask 'google-cloud-sdk'
 cask 'karabiner-elements'
 cask 'postico'
+cask 'pock'
 
 cask 'qlcolorcode'
 cask 'qlstephen'
