@@ -55,4 +55,5 @@ mas 'Magnet', id: 441258766
 mas 'Slack', id: 803453959
 mas 'EasyRes', id: 688211836
 mas 'Medis', id: 1063631769
+mas 'Paste 2', id: 967805235
 
