@@ -11,13 +11,12 @@
     "editor.formatOnSave": true,
     "editor.renderControlCharacters": true,
     "workbench.editor.enablePreview": false,
-    "workbench.statusBar.feedback.visible": false,
     "workbench.colorTheme": "Dracula",
 
     // Terminal
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
     "terminal.integrated.fontSize": 15,
-    "terminal.external.osxExec": "iTerm.app",
+    "terminal.external.osxExec": "/Applications/iTerm.app",
 
     // Emmet
     "emmet.triggerExpansionOnTab": true,
@@ -40,8 +39,7 @@
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
 
-    // Lang specific settings
-
+    // Language specific settings
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80,
@@ -55,6 +53,7 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
