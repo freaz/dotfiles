@@ -23,8 +23,7 @@ antigen init ~/.antigenrc
 
 
 # Setup paths
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH"
 export PATH="$PATH:$(python3 -m site --user-base)/bin" # Python3 user base
 export PATH="$PATH:$HOME/.cargo/bin" # rust binaries
 [[ -e $HOME/.rbenv ]] && export PATH="$HOME/.rbenv/bin:$PATH"
