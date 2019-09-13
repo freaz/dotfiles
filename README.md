@@ -20,6 +20,7 @@ $ alias home="git --work-tree=$HOME --git-dir=$HOME/.files.git"
 $ home init
 $ home remote add origin git@github.com:freaz/dotfiles.git
 $ home fetch
+$ home reset HEAD
 ```
 
 Installing tools:
