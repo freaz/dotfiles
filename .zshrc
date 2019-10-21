@@ -78,6 +78,9 @@ alias docker-postgres-connect='docker run --rm -it --link pg postgres psql -h pg
 alias docker-redis='docker run --rm -it --name redis -p 6379:6379 -v ~/.docker-volumes/redis_data:/data -d redis redis-server --appendonly yes'
 alias docker-redis-connect='docker run --rm -it --link redis redis redis-cli -h redis'
 
+# Use iTerm2 integration
+. ~/.iterm/shell_integration.zsh
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
