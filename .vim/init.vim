@@ -3,6 +3,11 @@ filetype off                  " required
 
 call plug#begin('~/.vim/plugged')
 
+
+" Vim settings and behaviour
+Plug 'sjl/vitality.vim'
+Plug 'tpope/vim-sensible'
+
 " plugin on GitHub repo
 Plug 'tpope/vim-fugitive'
 " syntax linter
@@ -13,12 +18,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 " EditorConfig plugin for Vim http://editorconfig.org
 Plug 'editorconfig/editorconfig-vim'
-" VIM airline
-Plug 'bling/vim-airline'
 " A better JSON for Vim
 Plug 'elzr/vim-json'
-" Make Vim play nicely with iTerm 2 and tmux.
-Plug 'sjl/vitality.vim'
 " A Vim plugin which shows a git diff in the gutter
 Plug 'airblade/vim-gitgutter'
 " Drakula colorscheme
@@ -28,7 +29,7 @@ Plug 'mattn/emmet-vim'
 " Gists support
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
-" Language
+" Languages
 Plug 'kylef/apiblueprint.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'ekalinin/dockerfile.vim'
@@ -74,13 +75,13 @@ set incsearch " Highlight matches as you type
 set ignorecase
 set smartcase " Be case-sensitive if expression contains a capital letter
 
-" Airline config
-set laststatus=2
-
 " Backup
 set nobackup
 set nowritebackup
 set directory=$HOME/.vim/tmp//,. " Keep swap files in one place
+
+" 
+"set t_RV=
 
 "Copy copy register to OS X general pasteboard
 function! PBCopy()
@@ -97,9 +98,6 @@ endfunction
 " " (even in tmux)
 autocmd FocusLost * :call PBCopy()
 autocmd FocusGained * :call PBPaste()
-
-" 
-set t_RV=
 
 " Key mapping
 map <C-o> :NERDTreeToggle<CR>
