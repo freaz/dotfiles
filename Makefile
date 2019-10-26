@@ -1,7 +1,6 @@
 BREW=/usr/local/bin/brew
 BREW_BUNDLE=/usr/local/Homebrew/Library/Taps/homebrew/homebrew-bundle
 NVM=~/.nvm/nvm.sh
-VUNDLE=~/.vim/bundle/Vundle.vim
 ZSH_ANTIGEN=~/.zsh/antigen
 SUBLIME_OSX=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 SUBLIME_DEBIAN=~/.config/sublime-text-3/Packages/User
@@ -10,7 +9,7 @@ VSCODE_SETTINGS_DEBIAN=~/.config/Code/User/settings.json
 TMUX=~/.tmux
 TMUX_TPM=~/.tmux/plugins/tpm
 
-all: $(ZSH_ANTIGEN) $(NVM) $(VUNDLE)
+all: $(ZSH_ANTIGEN) $(NVM)
 osx: homebrew-packages all $(VSCODE_SETTINGS_OSX) $(SUBLIME_OSX)
 debian: debian-packages all $(SUBLIME_DEBIAN)
 
@@ -26,11 +25,6 @@ $(BREW_BUNDLE): $(BREW)
 $(NVM):
 	@echo Installing NVM
 	@sh -c "`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh`"
-
-$(VUNDLE):
-	@echo Cloning Vundle.vim
-	@git clone https://github.com/VundleVim/Vundle.vim.git $(VUNDLE)
-	@vim +PluginInstall +qall
 
 $(SUBLIME_OSX):
 	ln -s ~/.sublime_config $(SUBLIME_OSX)

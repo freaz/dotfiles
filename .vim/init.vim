@@ -1,53 +1,39 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
+Plug 'tpope/vim-fugitive'
 " syntax linter
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 " Better filetree
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 " fuzzy search
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 " EditorConfig plugin for Vim http://editorconfig.org
-Plugin 'editorconfig/editorconfig-vim'
+Plug 'editorconfig/editorconfig-vim'
 " VIM airline
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 " A better JSON for Vim
-Plugin 'elzr/vim-json'
+Plug 'elzr/vim-json'
 " Make Vim play nicely with iTerm 2 and tmux.
-Plugin 'sjl/vitality.vim'
+Plug 'sjl/vitality.vim'
 " A Vim plugin which shows a git diff in the gutter
-Plugin 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 " Drakula colorscheme
-Plugin 'dracula/vim'
+Plug 'dracula/vim'
 " Emmet
-Plugin 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 " Gists support
-Plugin 'mattn/webapi-vim'
-Plugin 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
+Plug 'mattn/gist-vim'
 " Language
-Plugin 'kylef/apiblueprint.vim'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'ekalinin/dockerfile.vim'
+Plug 'kylef/apiblueprint.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'ekalinin/dockerfile.vim'
 
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/freaz/.vim/ownplugin'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()
 
 " Appearance
 language en_US.UTF-8

@@ -50,6 +50,7 @@ alias gpg-ls='gpg --list-secret-keys --keyid-format LONG'
 alias npm-installed='npm list -g --depth=0'
 alias 1password='eval $(op signin my)'
 alias pretty-json='python -m json.tool'
+alias vim-plug-update='curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Docker Aliases
 alias dm='docker-machine'
