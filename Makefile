@@ -54,5 +54,5 @@ homebrew-packages: $(BREW_BUNDLE)
 	brew bundle
 
 debian-packages:
-	sudo apt install curl zsh vim git git-extras wget rbenv tmux python3 docker.io
+	sudo apt install curl zsh vim git git-extras wget rbenv tmux python3 docker.io mosh
 
