@@ -5,6 +5,7 @@ tap 'jesseduffield/lazydocker'
 
 brew 'zsh'
 brew 'git'
+brew 'mosh'
 brew 'git-extras'
 brew 'vim'
 brew 'tmux'
