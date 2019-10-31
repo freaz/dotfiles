@@ -102,3 +102,8 @@ autocmd FocusGained * :call PBPaste()
 " Key mapping
 map <C-o> :NERDTreeToggle<CR>
 
+" Working with tabs
+nnoremap <C-l> :tabn<cr>
+nnoremap <C-h> :tabp<cr>
+nnoremap <C-c> :tabnew<cr>
+
