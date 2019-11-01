@@ -100,7 +100,7 @@ autocmd FocusLost * :call PBCopy()
 autocmd FocusGained * :call PBPaste()
 
 " Key mapping
-map <C-o> :NERDTreeToggle<CR>
+map <C-o> :NERDTreeFocus<CR>
 
 " Working with tabs
 nnoremap <C-l> :tabn<cr>
