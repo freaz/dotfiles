@@ -1,8 +1,8 @@
 ### GIT
-ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg_bold[blue]%}git:(%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg_bold[blue]%}[%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%})%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}]%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}]%{$reset_color%}"
 
 ### NodejS
 function nvm_info() {
@@ -37,6 +37,11 @@ function show_datetime() {
   echo "%{$fg_bold[green]%}[$(date +%Y-%m-%dT%H:%M:%S)]%{$reset_color%}"
 }
 
-PROMPT='%{$bg[green]$fg[black]%} %c %{$reset_color%}$(git_prompt_info) %B$%b%{$reset_color%} '
+function machine() {
+  echo "machine:($(hostname))"
+}
+
+### Defining Prompt look
+PROMPT='%{$bg[green]$fg[black]%} $(hostname) :: %c %{$reset_color%}$(git_prompt_info) %B$%b%{$reset_color%} '
 RPROMPT='$(docker_info) $(nvm_info) $(ruby_version)'
 

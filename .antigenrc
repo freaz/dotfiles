@@ -1,8 +1,6 @@
 # Lets start with Oh My ZSH
 antigen use oh-my-zsh
 
-# Other bundles
-
 antigen bundles <<BUNDLES
   # Terminal
   zsh-users/zsh-completions
@@ -27,8 +25,7 @@ antigen bundles <<BUNDLES
   heroku
 BUNDLES
 
-#antigen theme freaz/dotfiles .oh-my-zsh-custom/themes/freaz
-antigen bundle ~/.zsh/themes freaz.zsh-theme --no-local-clone
+antigen bundle $HOME/.zsh/themes freaz.zsh-theme
 
 # ZSH dependencies ready to install
 antigen apply
