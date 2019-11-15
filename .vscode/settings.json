@@ -6,18 +6,18 @@
     "editor.tabSize": 2,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "bottom",
-    "editor.rulers": [80],
+    "editor.rulers": [
+        80
+    ],
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.renderControlCharacters": true,
     "workbench.editor.enablePreview": false,
     "workbench.colorTheme": "Dracula",
-
     // Terminal
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
     "terminal.integrated.fontSize": 15,
     "terminal.external.osxExec": "/Applications/iTerm.app",
-
     // Emmet
     "emmet.triggerExpansionOnTab": true,
     "emmet.syntaxProfiles": {
@@ -25,12 +25,9 @@
         "vue-html": "html",
         "vue": "html"
     },
-
     // Prettier
-    "prettier.eslintIntegration": true,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
-
     // GitLens
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
@@ -38,22 +35,18 @@
     "gitlens.keymap": "alternate",
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
-
     // Language specific settings
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80,
         "editor.quickSuggestions": false
     },
-
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
-
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
