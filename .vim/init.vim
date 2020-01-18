@@ -33,6 +33,7 @@ Plug 'mattn/gist-vim'
 Plug 'kylef/apiblueprint.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'ekalinin/dockerfile.vim'
+Plug 'dag/vim-fish'
 
 call plug#end()
 

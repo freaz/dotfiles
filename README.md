@@ -2,7 +2,7 @@
 
 ## Installation
 
-On OS X first install Xcode Command Line Tools:
+On MacOS first install Xcode Command Line Tools:
 
 ```shell
 $ xcode-select --install
@@ -29,8 +29,8 @@ Installing tools:
 # all systems
 $ make
 
-# Mac OS X
-$ make osx
+# MacOS
+$ make macos
 
 # Debian / Ubuntu
 $ make debian

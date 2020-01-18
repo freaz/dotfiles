@@ -3,6 +3,7 @@ tap 'homebrew/bundle'
 tap 'heroku/brew'
 tap 'jesseduffield/lazydocker'
 
+brew 'fish'
 brew 'zsh'
 brew 'git'
 brew 'mosh'
