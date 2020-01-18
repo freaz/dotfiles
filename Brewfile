@@ -1,6 +1,5 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
-tap 'heroku/brew'
 tap 'jesseduffield/lazydocker'
 
 brew 'fish'
@@ -18,7 +17,6 @@ brew 'go'
 brew 'mas'
 brew 'doctl'
 brew 'awscli'
-brew 'heroku'
 brew 'kubectl'
 brew 'lazydocker'
 
