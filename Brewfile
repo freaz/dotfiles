@@ -15,7 +15,6 @@ brew 'hexyl'
 brew 'node'
 brew 'python'
 brew 'go'
-brew 'rtv'
 brew 'mas'
 brew 'doctl'
 brew 'awscli'
@@ -36,9 +35,7 @@ cask 'iterm2'
 cask 'hyper'
 cask 'keybase'
 cask 'gpg-suite-no-mail'
-cask 'tunnelbear'
 cask 'tg-pro'
-cask 'dash'
 cask 'now'
 cask 'google-cloud-sdk'
 cask 'karabiner-elements'
@@ -56,5 +53,4 @@ mas 'Magnet', id: 441258766
 mas 'Slack', id: 803453959
 mas 'EasyRes', id: 688211836
 mas 'Medis', id: 1063631769
-mas 'Paste 2', id: 967805235
 
