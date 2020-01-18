@@ -5,8 +5,6 @@ SUBLIME_MACOS=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 SUBLIME_DEBIAN=~/.config/sublime-text-3/Packages/User
 VSCODE_SETTINGS_MACOS=~/Library/Application\ Support/Code/User
 VSCODE_SETTINGS_DEBIAN=~/.config/Code/User/settings.json
-TMUX=~/.tmux
-TMUX_TPM=~/.tmux/plugins/tpm
 
 all: $(NVM) fish
 macos: homebrew-packages all $(VSCODE_SETTINGS_MACOS) $(SUBLIME_MACOS)
@@ -39,12 +37,6 @@ $(VSCODE_SETTINGS_MACOS):
 	ln -s ~/.vscode/keybindingsMac.json ${VSCODE_SETTINGS_MACOS}/keybindings.json
 	ln -s ~/.vscode/settings.json ${VSCODE_SETTINGS_MACOS}/settings.json
 	ln -s ~/.vscode/snippets ${VSCODE_SETTINGS_MACOS}/snippets
-
-$(TMUX_TPM):
-	@git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-$(TMUX): $(TMUX_TPM)
-	@echo Preparing TMUX
 
 fish:
 	@chsh -s $(shell which fish)
