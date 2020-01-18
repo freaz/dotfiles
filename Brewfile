@@ -4,7 +4,6 @@ tap 'heroku/brew'
 tap 'jesseduffield/lazydocker'
 
 brew 'fish'
-brew 'zsh'
 brew 'git'
 brew 'mosh'
 brew 'git-extras'
