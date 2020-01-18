@@ -35,7 +35,12 @@ fish:
 homebrew_packages: $(BREW_BUNDLE)
 	brew bundle
 
+.PHONY: apt_repositories
+apt_repositories:
+	sudo apt-add-repository ppa:fish-shell/release-3
+	sudo apt-get update
+
 .PHONY: apt_packages
-apt_packages:
-	sudo apt install curl vim git git-extras wget tmux python3 docker.io mosh
+apt_packages: apt_repositories
+	sudo apt install fish curl vim git git-extras wget tmux python3 docker.io mosh
 
