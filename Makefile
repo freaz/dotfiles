@@ -1,16 +1,10 @@
 BREW=/usr/local/bin/brew
 BREW_BUNDLE=/usr/local/Homebrew/Library/Taps/homebrew/homebrew-bundle
-NVM=~/.nvm/nvm.sh
-SUBLIME_MACOS=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-SUBLIME_DEBIAN=~/.config/sublime-text-3/Packages/User
-VSCODE_SETTINGS_MACOS=~/Library/Application\ Support/Code/User
-VSCODE_SETTINGS_DEBIAN=~/.config/Code/User/settings.json
+SUBLIME_CONF=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+VSCODE_CONF=~/Library/Application\ Support/Code/User
 
-all: $(NVM) fish
-macos: homebrew-packages all $(VSCODE_SETTINGS_MACOS) $(SUBLIME_MACOS)
-debian: debian-packages all $(SUBLIME_DEBIAN)
-
-.PHONY: homebrew-packages debian-packages vscode-extensions all
+station: homebrew_packages fish $(VSCODE_CONF) $(SUBLIME_CONF)
+server: apt_packages fish
 
 $(BREW):
 	@echo Installing Homebrew
@@ -19,32 +13,29 @@ $(BREW):
 $(BREW_BUNDLE): $(BREW)
 	brew tap Homebrew/bundle
 
-$(NVM):
-	@echo Installing NVM
-	@sh -c "`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh`"
+$(SUBLIME_CONF):
+	ln -s ~/.sublime_config $(SUBLIME_CONF)
 
-$(SUBLIME_MACOS):
-	ln -s ~/.sublime_config $(SUBLIME_MACOS)
-
-$(SUBLIME_DEBIAN):
-	ln -s ~/.sublime_config $(SUBLIME_DEBIAN)
-
-vscode-extensions:
+.PHONY: vscode_sync_extensions
+vscode_sync_extensions: $(VSCODE_CONF)
 	@sh -c "~/.vscode/sync-extensions.sh"
 
-$(VSCODE_SETTINGS_MACOS):
-	mkdir -p ${VSCODE_SETTINGS_MACOS}
-	ln -s ~/.vscode/keybindingsMac.json ${VSCODE_SETTINGS_MACOS}/keybindings.json
-	ln -s ~/.vscode/settings.json ${VSCODE_SETTINGS_MACOS}/settings.json
-	ln -s ~/.vscode/snippets ${VSCODE_SETTINGS_MACOS}/snippets
+$(VSCODE_CONF):
+	mkdir -p ${VSCODE_CONF}
+	ln -s ~/.vscode/keybindingsMac.json ${VSCODE_CONF}/keybindings.json
+	ln -s ~/.vscode/settings.json ${VSCODE_CONF}/settings.json
+	ln -s ~/.vscode/snippets ${VSCODE_CONF}/snippets
 
+.PHONY: fish
 fish:
 	@chsh -s $(shell which fish)
 	@fish -c fisher
 
-homebrew-packages: $(BREW_BUNDLE)
+.PHONY: homebrew_packages
+homebrew_packages: $(BREW_BUNDLE)
 	brew bundle
 
-debian-packages:
+.PHONY: apt_packages
+apt_packages:
 	sudo apt install curl vim git git-extras wget tmux python3 docker.io mosh
 

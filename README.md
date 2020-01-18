@@ -26,14 +26,11 @@ $ home reset HEAD
 Installing tools:
 
 ```shell
-# all systems
-$ make
+# For workstation (MacOS)
+$ make station
 
-# MacOS
-$ make macos
-
-# Debian / Ubuntu
-$ make debian
+# On server
+$ make server
 ```
 
 ### Sublime
