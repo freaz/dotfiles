@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -14,6 +16,8 @@
 	<string>manual</string>
 	<key>AutoCommandHistory</key>
 	<false/>
+	<key>CopySelection</key>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Dracula</key>
@@ -229,6 +233,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>A8964867-82FC-4992-89C6-660B7C2893ED</string>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0xf700-0x320000</key>
@@ -372,13 +378,13 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>640 690 400 129 0 0 1680 1050 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 363 620 392 0 0 1440 877 </string>
+	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>368 321 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>500 308 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 339 810 538 0 0 1680 1050 </string>
+	<string>0 489 810 538 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -1136,7 +1142,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Show Status Bar</key>
-			<true/>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Status Bar Layout</key>
@@ -1394,8 +1400,6 @@
 			<true/>
 			<key>Window Type</key>
 			<integer>0</integer>
-			<key>Working Directory</key>
-			<string>/Users/ondrejmusil</string>
 		</dict>
 	</array>
 	<key>NoSyncAllAppVersions</key>
@@ -1404,6 +1408,7 @@
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
+		<string>3.3.7</string>
 		<string>3.2.9</string>
 		<string>3.3.2</string>
 		<string>3.3.0</string>
@@ -1415,7 +1420,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{518, 823}</string>
+		<string>{465, 786}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1426,7 +1431,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>2AD94415-E863-48CF-9AD6-AED7E399239A</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>18</integer>
+	<integer>22</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2159,14 +2164,7 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>boards</string>
-		<string>api_user_boards_ur</string>
-		<string>current</string>
-		<string>browsert</string>
-	</array>
-	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
+  <key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>521504099.49118298</real>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -2218,12 +2216,14 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-14T19:11:26Z</date>
+	<date>2020-01-18T19:22:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
+	<true/>
+	<key>SmartPlacement</key>
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
@@ -2254,6 +2254,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.7</string>
 </dict>
 </plist>
