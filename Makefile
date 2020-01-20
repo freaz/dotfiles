@@ -28,6 +28,7 @@ $(VSCODE_CONF):
 
 .PHONY: fish
 fish:
+	@echo /usr/local/bin/fish | sudo tee -a /etc/shells
 	@chsh -s $(shell which fish)
 	@fish -c fisher
 
