@@ -1,16 +1,15 @@
 # Set Language
-export LC_ALL=en_US.UTF-8  
-export LANG=en_US.UTF-8
-
-# Credentials
-set CREDENTIALS $HOME/.credentials
-#[[ -f $CREDENTIALS ]] && source $CREDENTIALS
-if test -f $CREDENTIALS
-  source $CREDENTIALS
-end
+set -x LC_ALL en_US.UTF-8
+set -x LANG en_US.UTF-8
 
 # Setup paths
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+set -U fish_user_paths "/usr/local/sbin" $fish_user_paths
+
+# Credentials
+set -l LOCAL_FISH $HOME/.local.fish
+if test -f $LOCAL_FISH
+  source $LOCAL_FISH
+end
 
 # Aliases
 alias home="git --work-tree=$HOME --git-dir=$HOME/.files.git"
