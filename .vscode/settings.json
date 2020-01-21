@@ -15,7 +15,7 @@
     "workbench.editor.enablePreview": false,
     "workbench.colorTheme": "Dracula",
     // Terminal
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "terminal.integrated.fontSize": 15,
     "terminal.external.osxExec": "/Applications/iTerm.app",
     // Emmet
