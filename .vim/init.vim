@@ -47,7 +47,6 @@ set termguicolors
 set showmode
 set hidden " Handle multiple buffers better
 set number " Show line numbers
-set cursorline
 set title
 set mouse=a
 set shortmess=Ia
