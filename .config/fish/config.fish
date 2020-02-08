@@ -13,6 +13,7 @@ end
 
 # Aliases
 alias home="git --work-tree=$HOME --git-dir=$HOME/.files.git"
+alias g=git
 alias sublime=subl
 alias s=subl
 alias gpg-ls='gpg --list-secret-keys --keyid-format LONG'
