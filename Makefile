@@ -4,7 +4,7 @@ SUBLIME_CONF=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 VSCODE_CONF=~/Library/Application\ Support/Code/User
 
 station: homebrew_packages fish $(VSCODE_CONF) $(SUBLIME_CONF)
-server: apt_packages fish
+server: apt_packages fish lazydocker
 
 $(BREW):
 	@echo Installing Homebrew
@@ -35,6 +35,10 @@ fish:
 .PHONY: homebrew_packages
 homebrew_packages: $(BREW_BUNDLE)
 	brew bundle
+
+.PHONY: lazydocker
+lazydocker:
+	curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 
 .PHONY: apt_repositories
 apt_repositories:
