@@ -4,6 +4,7 @@ tap 'jesseduffield/lazydocker'
 
 brew 'awscli'
 brew 'doctl'
+brew 'duck'
 brew 'fish'
 brew 'git'
 brew 'git-extras'
@@ -23,6 +24,7 @@ brew 'vim'
 brew 'wget'
 
 cask '1password'
+cask 'cyberduck'
 cask 'docker'
 cask 'firefox'
 cask 'google-chrome'
@@ -41,7 +43,6 @@ cask 'visual-studio-code'
 
 mas 'Bear', id: 1091189122
 mas 'EasyRes', id: 688211836
-mas 'ForkLift', id: 412448059
 mas 'Helium', id: 1054607607
 mas 'Kindle', id: 405399194
 mas 'Magnet', id: 441258766
