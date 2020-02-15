@@ -38,10 +38,6 @@ cask 'tg-pro'
 cask 'virtualbox'
 cask 'visual-studio-code'
 
-cask 'qlcolorcode'
-cask 'qlstephen'
-cask 'quicklook-json'
-
 mas 'Bear', id: 1091189122
 mas 'EasyRes', id: 688211836
 mas 'ForkLift', id: 412448059
