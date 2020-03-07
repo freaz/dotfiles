@@ -17,6 +17,7 @@ brew 'minikube'
 brew 'mosh'
 brew 'mutt'
 brew 'node'
+brew 'pinentry-mac'
 brew 'python'
 brew 'tmux'
 brew 'trash'
@@ -51,5 +52,6 @@ mas 'Pixelmator', id: 407963104
 mas 'Playgrounds', id: 1496833156
 mas 'Slack', id: 803453959
 mas 'Things 3', id: 904280696
+mas 'WhatsApp Desktop', id: 1147396723
 mas 'XCode', id: 497799835
 

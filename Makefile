@@ -2,8 +2,9 @@ BREW=/usr/local/bin/brew
 BREW_BUNDLE=/usr/local/Homebrew/Library/Taps/homebrew/homebrew-bundle
 SUBLIME_CONF=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 VSCODE_CONF=~/Library/Application\ Support/Code/User
+GPG_AGENT=~/.gnupg/gpg-agent.conf
 
-station: homebrew_packages fish $(VSCODE_CONF) $(SUBLIME_CONF)
+station: homebrew_packages fish $(VSCODE_CONF) $(SUBLIME_CONF) $(GPG_AGENT)
 server: apt_packages fish lazydocker
 
 $(BREW):
@@ -49,3 +50,5 @@ apt_repositories:
 apt_packages: apt_repositories
 	sudo apt install fish curl vim git git-extras wget tmux python3 docker.io mosh
 
+$(GPG_AGENT):
+	echo "pinentry-program /usr/local/bin/pinentry-mac" >> $(GPG_AGENT)
