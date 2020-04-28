@@ -14,9 +14,7 @@
     ls = ls-files
     fullci = commit --allow-empty -m '[full-ci]'
     gpg = config user.signingkey
-    personal = !git config user.name \"Ondřej Musil\" && git config user.email \"omusil@gmail.com\"
-    oracle = !git config user.name \"Ondřej Musil\" && git config user.email \"ondrej.musil@oracle.com\"
-    simplewealth = !git config user.name \"Ondřej Musil\" && git config user.email \"ondrej@simplewealth.ch\"
+    personal = !git config user.name \"Ondřej Musil\" && git config user.email \"mail@ondrejmusil.cz\"
 [core]
     editor = vim
     excludesfile = /Users/freaz/.gitignore_global
