@@ -3,7 +3,7 @@ set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
 
 # Setup paths
-set -U fish_user_paths "/usr/local/sbin" $fish_user_paths
+set PATH /usr/local/sbin $PATH
 
 # Credentials
 set -l LOCAL_FISH $HOME/.local.fish
