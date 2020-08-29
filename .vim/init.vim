@@ -34,6 +34,7 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'ekalinin/dockerfile.vim'
 Plug 'dag/vim-fish'
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
 
