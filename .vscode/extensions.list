@@ -7,6 +7,7 @@ EditorConfig.EditorConfig
 eg2.vscode-npm-script
 esbenp.prettier-vscode
 GitHub.vscode-pull-request-github
+HashiCorp.terraform
 HookyQR.beautify
 mikestead.dotenv
 ms-azuretools.vscode-docker
