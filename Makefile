@@ -1,10 +1,9 @@
 BREW=/usr/local/bin/brew
 BREW_BUNDLE=/usr/local/Homebrew/Library/Taps/homebrew/homebrew-bundle
-SUBLIME_CONF=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 VSCODE_CONF=~/Library/Application\ Support/Code/User
 GPG_AGENT=~/.gnupg/gpg-agent.conf
 
-station: homebrew_packages fish $(VSCODE_CONF) $(SUBLIME_CONF) $(GPG_AGENT)
+station: homebrew_packages fish $(VSCODE_CONF) $(GPG_AGENT)
 server: apt_packages fish lazydocker
 
 $(BREW):
@@ -13,9 +12,6 @@ $(BREW):
 
 $(BREW_BUNDLE): $(BREW)
 	brew tap Homebrew/bundle
-
-$(SUBLIME_CONF):
-	ln -s ~/.sublime_config $(SUBLIME_CONF)
 
 .PHONY: vscode_sync_extensions
 vscode_sync_extensions: $(VSCODE_CONF)
