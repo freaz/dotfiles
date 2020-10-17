@@ -1,30 +1,28 @@
 [user]
-    email = mail@ondrejmusil.cz
-    name = Ondřej Musil
-	  signingkey = AB7B615C18912E9C
-[alias]
-    st = status
-    ci = commit
-    br = branch
-    co = checkout
-    df = diff
-    ds = diff --staged
-    lg = log -p
-    lgo = log --oneline
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
-    ls = ls-files
-    fullci = commit --allow-empty -m '[full-ci]'
-    gpg = config user.signingkey
+  email = mail@ondrejmusil.cz
+  name = Ondřej Musil
+  signingkey = AB7B615C18912E9C
 [core]
-    editor = vim
+  editor = vim
 [credential]
-    helper = osxkeychain
-[filter "lfs"]
-    clean = git lfs clean %f
-    smudge = git lfs smudge %f
-    required = true
+  helper = osxkeychain
 [commit]
-    gpgsign = true
+  gpgsign = true
 [github]
-    user = freaz
+  user = freaz
+[pull]
+  ff = only
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  ds = diff --staged
+  lg = log -p
+  lgo = log --oneline
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+  ls = ls-files
+  gpg = config user.signingkey
+
