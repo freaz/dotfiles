@@ -7,7 +7,10 @@ call plug#begin('~/.vim/plugged')
 " Vim settings and behaviour
 Plug 'sjl/vitality.vim'
 Plug 'tpope/vim-sensible'
-
+" Conquer of Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" JSON with Comments 
+Plug 'kevinoid/vim-jsonc'
 " plugin on GitHub repo
 Plug 'tpope/vim-fugitive'
 " syntax linter
@@ -18,20 +21,14 @@ Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 " EditorConfig plugin for Vim http://editorconfig.org
 Plug 'editorconfig/editorconfig-vim'
-" A better JSON for Vim
-Plug 'elzr/vim-json'
 " A Vim plugin which shows a git diff in the gutter
 Plug 'airblade/vim-gitgutter'
 " Drakula colorscheme
 Plug 'dracula/vim'
 " Emmet
 Plug 'mattn/emmet-vim'
-" Gists support
-Plug 'mattn/webapi-vim'
-Plug 'mattn/gist-vim'
 " Languages
 Plug 'kylef/apiblueprint.vim'
-Plug 'leafgarland/typescript-vim'
 Plug 'ekalinin/dockerfile.vim'
 Plug 'dag/vim-fish'
 Plug 'hashivim/vim-terraform'
@@ -51,6 +48,11 @@ set number " Show line numbers
 set title
 set mouse=a
 set shortmess=Ia
+set cmdheight=2 " Give more space for displaying messages.
+set signcolumn=number " Always show the signcolumn
+
+" TextEdit might fail if hidden is not set.
+set hidden
 
 " Keybindings
 set backspace=indent,eol,start
@@ -69,6 +71,8 @@ set wildmode=longest:full,full " Completion settings
 " Editing
 set showmatch
 set matchtime=3
+set shortmess+=c
+set updatetime=300
 
 " Search
 set hlsearch " Highlight all search matches
@@ -79,10 +83,6 @@ set smartcase " Be case-sensitive if expression contains a capital letter
 " Backup
 set nobackup
 set nowritebackup
-set directory=$HOME/.vim/tmp//,. " Keep swap files in one place
-
-" 
-"set t_RV=
 
 "Copy copy register to OS X general pasteboard
 function! PBCopy()
@@ -107,4 +107,22 @@ map <C-o> :NERDTreeFocus<CR>
 nnoremap <C-l> :tabn<cr>
 nnoremap <C-h> :tabp<cr>
 nnoremap <C-c> :tabnew<cr>
+
+
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
 
