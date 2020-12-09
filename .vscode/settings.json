@@ -52,5 +52,6 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "git.allowForcePush": true
 }
