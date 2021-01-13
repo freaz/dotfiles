@@ -4,7 +4,7 @@
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlight": "all",
     "editor.tabSize": 2,
-    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.multiCursorModifier": "alt",
     "editor.snippetSuggestions": "bottom",
     "editor.rulers": [
         80
