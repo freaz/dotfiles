@@ -29,9 +29,3 @@ alias dm-reset='eval (dm env -u)'
 alias dc='docker-compose'
 alias dr='docker run --rm -it'
 
-# Docker Services
-alias docker-postgres='docker run --rm -it --name pg -p 5432:5432 -v ~/.docker-volumes/postgres_data:/var/lib/postgresql/data -d postgres'
-alias docker-postgres-connect='docker run --rm -it --link pg postgres psql -h pg -U postgres'
-alias docker-redis='docker run --rm -it --name redis -p 6379:6379 -v ~/.docker-volumes/redis_data:/data -d redis redis-server --appendonly yes'
-alias docker-redis-connect='docker run --rm -it --link redis redis redis-cli -h redis'
-
