@@ -65,6 +65,5 @@ mas 'Playgrounds', id: 1496833156
 mas 'Slack', id: 803453959
 mas 'Things 3', id: 904280696
 mas 'The Unarchiver', id: 425424353
-mas 'WhatsApp Desktop', id: 1147396723
 mas 'XCode', id: 497799835
 
