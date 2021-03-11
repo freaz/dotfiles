@@ -4,7 +4,6 @@
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlight": "all",
     "editor.tabSize": 2,
-    "editor.multiCursorModifier": "alt",
     "editor.snippetSuggestions": "bottom",
     "editor.rulers": [
         80
@@ -12,12 +11,19 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.renderControlCharacters": true,
+    "editor.multiCursorModifier": "alt",
+    "editor.minimap.enabled": false,
     "workbench.editor.enablePreview": false,
     "workbench.colorTheme": "Dracula",
+    // VCS
+    "git.allowForcePush": true,
     // Terminal
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "terminal.integrated.fontSize": 15,
     "terminal.external.osxExec": "/Applications/iTerm.app",
+    // Vim
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
     // Emmet
     "emmet.triggerExpansionOnTab": true,
     "emmet.syntaxProfiles": {
@@ -33,7 +39,6 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.keymap": "alternate",
-    "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
     // Language specific settings
     "[markdown]": {
@@ -51,7 +56,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
-    "git.allowForcePush": true
 }
