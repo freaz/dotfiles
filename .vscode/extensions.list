@@ -1,6 +1,5 @@
 alexkrechik.cucumberautocomplete
 dbaeumer.vscode-eslint
-deerawan.vscode-dash
 dracula-theme.theme-dracula
 eamodio.gitlens
 EditorConfig.EditorConfig
@@ -13,13 +12,6 @@ HookyQR.beautify
 mikestead.dotenv
 ms-azuretools.vscode-docker
 ms-python.python
-ms-vscode-remote.remote-containers
-ms-vscode-remote.remote-ssh
-ms-vscode-remote.remote-ssh-edit
-ms-vscode-remote.remote-wsl
-ms-vscode-remote.vscode-remote-extensionpack
-octref.vetur
 rebornix.ruby
 robinbentley.sass-indented
-vscodevim.vim
 wingrunr21.vscode-ruby
