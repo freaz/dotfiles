@@ -1,5 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "workbench.colorTheme": "Dracula",
+    "workbench.editor.enablePreview": false,
+
+    // Editor
     "editor.fontSize": 17,
     "editor.renderWhitespace": "all",
     "editor.renderLineHighlight": "all",
@@ -11,19 +15,16 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.renderControlCharacters": true,
-    "editor.multiCursorModifier": "alt",
     "editor.minimap.enabled": false,
-    "workbench.editor.enablePreview": false,
-    "workbench.colorTheme": "Dracula",
+    
     // VCS
     "git.allowForcePush": true,
+    
     // Terminal
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "terminal.integrated.fontSize": 15,
     "terminal.external.osxExec": "/Applications/iTerm.app",
-    // Vim
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
+    
     // Emmet
     "emmet.triggerExpansionOnTab": true,
     "emmet.syntaxProfiles": {
@@ -34,12 +35,10 @@
     // Prettier
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
-    // GitLens
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
-    "gitlens.keymap": "alternate",
-    "gitlens.views.lineHistory.enabled": true,
+
+    //GitHub
+    "githubPullRequests.fileListLayout": "flat",
+
     // Language specific settings
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
@@ -58,4 +57,7 @@
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
