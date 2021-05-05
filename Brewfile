@@ -1,7 +1,7 @@
+tap 'heroku/brew'
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'jesseduffield/lazydocker'
-tap 'heroku/brew'
 
 brew 'ansible'
 brew 'awscli'
@@ -9,11 +9,11 @@ brew 'doctl'
 brew 'duck'
 brew 'fish'
 brew 'gh'
-brew 'git'
 brew 'git-extras'
+brew 'git'
 brew 'go'
-brew 'heroku'
 brew 'heroku-node'
+brew 'heroku'
 brew 'hexyl'
 brew 'jq'
 brew 'kubectl'
@@ -23,9 +23,9 @@ brew 'minikube'
 brew 'mkcert'
 brew 'mosh'
 brew 'mutt'
+brew 'node'
 brew 'nss'
 brew 'oci-cli'
-brew 'node'
 brew 'pinentry-mac'
 brew 'python'
 brew 'ruby'
@@ -65,7 +65,6 @@ mas 'Medis', id: 1063631769
 mas 'Pixelmator', id: 407963104
 mas 'Playgrounds', id: 1496833156
 mas 'Slack', id: 803453959
-mas 'Things 3', id: 904280696
 mas 'The Unarchiver', id: 425424353
+mas 'Things 3', id: 904280696
 mas 'XCode', id: 497799835
-
