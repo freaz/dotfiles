@@ -23,8 +23,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 " A Vim plugin which shows a git diff in the gutter
 Plug 'airblade/vim-gitgutter'
-" Drakula colorscheme
-Plug 'dracula/vim'
 " Emmet
 Plug 'mattn/emmet-vim'
 " Languages
@@ -37,8 +35,6 @@ call plug#end()
 
 " Appearance
 language en_US.UTF-8
-let g:dracula_colorterm=0
-colorscheme dracula
 syntax on
 
 set termguicolors

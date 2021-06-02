@@ -1,7 +1,11 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "workbench.colorTheme": "Dracula",
+    "window.autoDetectColorScheme": true,
+
     "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.preferredLightColorTheme": "GitHub Light Default",
+    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
 
     // Editor
     "editor.fontSize": 17,
@@ -21,9 +25,21 @@
     "git.allowForcePush": true,
     
     // Terminal
-    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "terminal.integrated.fontSize": 15,
     "terminal.external.osxExec": "/Applications/iTerm.app",
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "fish": {
+            "path": "/usr/local/bin/fish",
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+    },
     
     // Emmet
     "emmet.triggerExpansionOnTab": true,
@@ -59,5 +75,5 @@
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
 }
