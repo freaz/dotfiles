@@ -2,4 +2,19 @@
   "key": "cmd+k",
   "command": "workbench.action.terminal.clear",
   "when": "terminalFocus"
-}]
+},
+{
+  "key": "alt+d",
+  "command": "editor.emmet.action.matchTag"
+},
+{
+  "key": "alt+d",
+  "command": "editor.action.jumpToBracket",
+  "when": "editorTextFocus"
+},
+{
+  "key": "shift+cmd+\\",
+  "command": "-editor.action.jumpToBracket",
+  "when": "editorTextFocus"
+}
+]
