@@ -16,5 +16,18 @@
   "key": "shift+cmd+\\",
   "command": "-editor.action.jumpToBracket",
   "when": "editorTextFocus"
+},
+{
+  "key": "ctrl+shift+`",
+  "command": "workbench.action.toggleMaximizedPanel"
+},
+{
+  "key": "ctrl+shift+`",
+  "command": "-workbench.action.terminal.new",
+  "when": "terminalProcessSupported"
+},
+{
+  "key": "ctrl+shift+c",
+  "command": "workbench.action.terminal.new"
 }
 ]
