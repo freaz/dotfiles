@@ -26,3 +26,5 @@
   ls = ls-files
   gpg = config user.signingkey
 
+[init]
+	defaultBranch = main
