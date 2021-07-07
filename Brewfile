@@ -35,6 +35,7 @@ brew 'tmux'
 brew 'trash'
 brew 'vim'
 brew 'wget'
+brew 'yq'
 
 cask '1password'
 cask 'cyberduck'
