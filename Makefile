@@ -44,7 +44,7 @@ apt_repositories:
 
 .PHONY: apt_packages
 apt_packages: apt_repositories
-	sudo apt install fish curl vim git git-extras wget tmux python3 docker.io mosh
+	sudo apt install fish curl vim git git-extras wget tmux python3 docker.io mosh rbenv
 
 $(GPG_AGENT):
 	echo "pinentry-program /usr/local/bin/pinentry-mac" >> $(GPG_AGENT)
