@@ -50,7 +50,6 @@ cask 'iterm2'
 cask 'karabiner-elements'
 cask 'notion'
 cask 'paw'
-cask 'pock'
 cask 'postico'
 cask 'postman'
 cask 'tg-pro'
@@ -58,8 +57,6 @@ cask 'virtualbox'
 cask 'visual-studio-code'
 
 mas 'Bear', id: 1091189122
-mas 'EasyRes', id: 688211836
-mas 'Helium', id: 1054607607
 mas 'Kindle', id: 405399194
 mas 'Magnet', id: 441258766
 mas 'Medis', id: 1063631769
