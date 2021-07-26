@@ -20,6 +20,7 @@
     "editor.formatOnSave": true,
     "editor.renderControlCharacters": true,
     "editor.minimap.enabled": false,
+    "editor.inlineSuggest.enabled": true,
     
     // VCS
     "git.allowForcePush": true,
