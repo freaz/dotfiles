@@ -14,9 +14,9 @@
   ff = only
 [alias]
   st = status
-  ci = commit
-  br = branch
   co = checkout
+  cob = checkout -b
+  del = branch -D
   df = diff
   ds = diff --staged
   lg = log -p
@@ -25,6 +25,6 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
   ls = ls-files
   gpg = config user.signingkey
-
+  email = config user.email
 [init]
 	defaultBranch = main
