@@ -9,7 +9,7 @@
 
     // Editor
     "editor.fontSize": 17,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "selection",
     "editor.renderLineHighlight": "all",
     "editor.tabSize": 2,
     "editor.snippetSuggestions": "bottom",
@@ -34,12 +34,12 @@
             "icon": "terminal-bash"
         },
         "fish": {
-            "path": "/usr/local/bin/fish",
+            "path": "/usr/local/bin/fish"
         },
         "tmux": {
             "path": "tmux",
             "icon": "terminal-tmux"
-        },
+        }
     },
     
     // Emmet
@@ -72,7 +72,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
