@@ -4,7 +4,7 @@ VSCODE_CONF=~/Library/Application\ Support/Code/User
 GPG_AGENT=~/.gnupg/gpg-agent.conf
 
 station: homebrew_packages fish $(VSCODE_CONF) $(GPG_AGENT)
-server: apt_packages fish lazydocker
+server: apt_packages fish rust
 
 $(BREW):
 	@echo Installing Homebrew
@@ -33,18 +33,18 @@ fish:
 homebrew_packages: $(BREW_BUNDLE)
 	brew bundle
 
-.PHONY: lazydocker
-lazydocker:
-	curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
-
 .PHONY: apt_repositories
 apt_repositories:
 	sudo apt-add-repository ppa:fish-shell/release-3
 	sudo apt-get update
 
 .PHONY: apt_packages
-apt_packages: apt_repositories
-	sudo apt install fish curl vim git git-extras wget tmux python3 docker.io mosh rbenv
+apt_packages: apt_repositories1
+	sudo apt install fish curl vim git git-extras wget tmux python3 docker.io mosh rbenv build-essential
+
+.PHONY: rust
+rust:
+	@curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 $(GPG_AGENT):
 	echo "pinentry-program /usr/local/bin/pinentry-mac" >> $(GPG_AGENT)
