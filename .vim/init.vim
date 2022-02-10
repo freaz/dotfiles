@@ -11,12 +11,12 @@ Plug 'tpope/vim-sensible'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " JSON with Comments 
 Plug 'kevinoid/vim-jsonc'
-" plugin on GitHub repo
-Plug 'tpope/vim-fugitive'
 " syntax linter
 Plug 'scrooloose/syntastic'
 " Better filetree
 Plug 'scrooloose/nerdtree'
+" Display tags in window
+Plug 'preservim/tagbar'
 " fuzzy search
 Plug 'kien/ctrlp.vim'
 " EditorConfig plugin for Vim http://editorconfig.org
@@ -97,13 +97,13 @@ autocmd FocusLost * :call PBCopy()
 autocmd FocusGained * :call PBPaste()
 
 " Key mapping
-map <C-o> :NERDTreeFocus<CR>
+nmap <C-o> :NERDTreeFocus<cr>
+nmap <C-i> :TagbarToggle<cr>
 
 " Working with tabs
 nnoremap <C-l> :tabn<cr>
 nnoremap <C-h> :tabp<cr>
 nnoremap <C-c> :tabnew<cr>
-
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
