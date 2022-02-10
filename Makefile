@@ -35,12 +35,12 @@ homebrew_packages: $(BREW_BUNDLE)
 
 .PHONY: apt_repositories
 apt_repositories:
-	sudo apt-add-repository ppa:fish-shell/release-3
+	sudo apt-add-repository -y ppa:fish-shell/release-3
 	sudo apt-get update
 
 .PHONY: apt_packages
-apt_packages: apt_repositories1
-	sudo apt install fish curl vim git git-extras wget tmux python3 docker.io mosh rbenv build-essential
+apt_packages: apt_repositories
+	sudo apt install -y fish curl vim git git-extras wget tmux python3 docker.io mosh rbenv build-essential universal-ctags
 
 .PHONY: rust
 rust:
