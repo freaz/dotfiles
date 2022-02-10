@@ -123,3 +123,5 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
+" Rust
+let g:rustfmt_autosave = 1
