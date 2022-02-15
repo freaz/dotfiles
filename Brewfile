@@ -55,6 +55,7 @@ cask 'notion'
 cask 'paw'
 cask 'postico'
 cask 'postman'
+cask 'signal'
 cask 'tg-pro'
 cask 'visual-studio-code'
 
