@@ -1,80 +1,81 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "window.autoDetectColorScheme": true,
+  "window.autoDetectColorScheme": true,
 
-    "workbench.editor.enablePreview": false,
-    "workbench.colorTheme": "GitHub Light Default",
-    "workbench.preferredLightColorTheme": "GitHub Light Default",
-    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "GitHub Light Default",
+  "workbench.preferredLightColorTheme": "GitHub Light Default",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
 
-    // Editor
-    "editor.fontSize": 17,
-    "editor.renderWhitespace": "selection",
-    "editor.renderLineHighlight": "all",
-    "editor.tabSize": 2,
-    "editor.snippetSuggestions": "bottom",
-    "editor.rulers": [
-        80
-    ],
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.renderControlCharacters": true,
-    "editor.minimap.enabled": false,
-    "editor.inlineSuggest.enabled": true,
-    
-    // VCS
-    "git.allowForcePush": true,
-    
-    // Terminal
-    "terminal.integrated.fontSize": 15,
-    "terminal.external.osxExec": "/Applications/iTerm.app",
-    "terminal.integrated.profiles.osx": {
-        "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-        },
-        "fish": {
-            "path": "/usr/local/bin/fish"
-        },
-        "tmux": {
-            "path": "tmux",
-            "icon": "terminal-tmux"
-        }
-    },
-    
-    // Emmet
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.syntaxProfiles": {
-        "javascript": "jsx",
-        "vue-html": "html",
-        "vue": "html"
-    },
-    // Prettier
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "es5",
+  // Editor
+  "editor.fontSize": 17,
+  "editor.renderWhitespace": "selection",
+  "editor.renderLineHighlight": "all",
+  "editor.tabSize": 2,
+  "editor.snippetSuggestions": "bottom",
+  "editor.rulers": [80],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.renderControlCharacters": true,
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.fontLigatures": true,
 
-    // GitHub
-    "githubPullRequests.fileListLayout": "flat",
+  // VCS
+  "git.allowForcePush": true,
 
-    // Language specific settings
-    "[markdown]": {
-        "editor.wordWrap": "wordWrapColumn",
-        "editor.wordWrapColumn": 80,
-        "editor.quickSuggestions": false
+  // Terminal
+  "terminal.integrated.fontSize": 15,
+  "terminal.external.osxExec": "/Applications/iTerm.app",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
     },
-    "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+    "fish": {
+      "path": "/usr/local/bin/fish"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
     }
+  },
+
+  // Emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "vue-html": "html",
+    "vue": "html"
+  },
+  // Prettier
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+
+  // GitHub
+  "githubPullRequests.fileListLayout": "flat",
+
+  // Language specific settings
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.quickSuggestions": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
