@@ -1,5 +1,6 @@
 EditorConfig.EditorConfig
 GitHub.codespaces
+GitHub.copilot
 GitHub.github-vscode-theme
 GitHub.vscode-pull-request-github
 HashiCorp.terraform
@@ -16,3 +17,5 @@ rebornix.ruby
 superfaceai.superface-language-client-vscode
 wingrunr21.vscode-ruby
 bradlc.vscode-tailwindcss
+rangav.vscode-thunder-client
+eamodio.gitlens

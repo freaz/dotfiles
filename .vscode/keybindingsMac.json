@@ -29,5 +29,9 @@
 {
   "key": "ctrl+shift+c",
   "command": "workbench.action.terminal.new"
+},
+{
+  "key": "alt+cmd+b",
+  "command": "workbench.action.toggleAuxiliaryBar"
 }
 ]
