@@ -60,8 +60,7 @@
   // Language specific settings
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80,
-    "editor.quickSuggestions": false
+    "editor.wordWrapColumn": 80
   },
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
