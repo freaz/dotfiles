@@ -36,7 +36,6 @@ brew 'terraform'
 brew 'tmux'
 brew 'trash'
 brew 'universal-ctags'
-brew 'vim'
 brew 'wget'
 brew 'yq'
 

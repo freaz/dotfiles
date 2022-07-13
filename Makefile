@@ -40,7 +40,7 @@ apt_repositories:
 
 .PHONY: apt_packages
 apt_packages: apt_repositories
-	sudo apt install -y fish curl vim git git-extras wget tmux python3 docker.io mosh rbenv build-essential universal-ctags
+	sudo apt install -y fish curl git git-extras wget tmux python3 docker.io mosh rbenv build-essential universal-ctags
 
 .PHONY: rust
 rust:
