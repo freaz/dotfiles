@@ -66,6 +66,7 @@ mas 'Kindle', id: 405399194
 mas 'Magnet', id: 441258766
 mas 'Medis', id: 1063631769
 mas 'MindNode', id: 1289197285
+mas 'MoneyWiz 3', id: 1012291524
 mas 'Pixelmator', id: 407963104
 mas 'Playgrounds', id: 1496833156
 mas 'Slack', id: 803453959
