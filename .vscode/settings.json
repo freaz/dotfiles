@@ -1,31 +1,32 @@
 // Place your settings in this file to overwrite the default settings
 {
   "window.autoDetectColorScheme": true,
-
   "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "GitHub Light Default",
   "workbench.preferredLightColorTheme": "GitHub Light Default",
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
-
   // Editor
   "editor.fontSize": 17,
   "editor.renderWhitespace": "selection",
   "editor.renderLineHighlight": "all",
   "editor.tabSize": 2,
   "editor.snippetSuggestions": "bottom",
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "editor.renderControlCharacters": true,
   "editor.minimap.enabled": false,
   "editor.inlineSuggest.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.fontLigatures": true,
-
   // VCS
   "git.allowForcePush": true,
-
   // Terminal
   "terminal.integrated.fontSize": 15,
   "terminal.external.osxExec": "/Applications/iTerm.app",
@@ -42,7 +43,10 @@
       "icon": "terminal-tmux"
     }
   },
-
+  // Copilot
+  "github.copilot.enable": {
+    "*": true,
+  },
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
@@ -50,31 +54,14 @@
     "vue-html": "html",
     "vue": "html"
   },
-  // Prettier
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-
   // GitHub
   "githubPullRequests.fileListLayout": "flat",
-
   // Language specific settings
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
   },
-  "[html]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }
