@@ -5,6 +5,7 @@ tap 'ubuntu/microk8s'
 
 brew 'ansible'
 brew 'awscli'
+brew 'deno'
 brew 'doctl'
 brew 'duck'
 brew 'fish'
