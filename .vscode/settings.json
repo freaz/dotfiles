@@ -17,7 +17,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": true
   },
   "editor.renderControlCharacters": true,
   "editor.minimap.enabled": false,
@@ -43,10 +43,6 @@
       "icon": "terminal-tmux"
     }
   },
-  // Copilot
-  "github.copilot.enable": {
-    "*": true,
-  },
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
@@ -56,6 +52,8 @@
   },
   // GitHub
   "githubPullRequests.fileListLayout": "flat",
+  // ESLint
+  "eslint.format.enable": true,
   // Language specific settings
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
