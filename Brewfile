@@ -7,7 +7,6 @@ brew 'ansible'
 brew 'awscli'
 brew 'deno'
 brew 'doctl'
-brew 'duck'
 brew 'fish'
 brew 'gh'
 brew 'git-extras'
@@ -19,7 +18,6 @@ brew 'hexyl'
 brew 'irssi'
 brew 'jq'
 brew 'mas'
-brew 'microk8s'
 brew 'minikube'
 brew 'miller'
 brew 'mkcert'
@@ -41,7 +39,6 @@ brew 'wget'
 brew 'yq'
 
 cask '1password'
-cask 'cyberduck'
 cask 'discord'
 cask 'docker'
 cask 'firefox'
@@ -51,21 +48,21 @@ cask 'google-cloud-sdk'
 cask 'gpg-suite-no-mail'
 cask 'iterm2'
 cask 'karabiner-elements'
-cask 'monodraw'
 cask 'notion'
-cask 'paw'
 cask 'postico'
 cask 'postman'
 cask 'signal'
+cask 'spotify'
 cask 'tg-pro'
 cask 'visual-studio-code'
+cask 'zoomus'
 
 mas 'Bear', id: 1091189122
 mas 'Kindle', id: 405399194
+mas 'LanguageTool', id: 1534275760
 mas 'Magnet', id: 441258766
-mas 'Medis', id: 1063631769
 mas 'MindNode', id: 1289197285
-mas 'MoneyWiz 3', id: 1012291524
+mas 'MoneyWiz', id: 1511185140
 mas 'Pixelmator', id: 407963104
 mas 'Playgrounds', id: 1496833156
 mas 'Slack', id: 803453959
