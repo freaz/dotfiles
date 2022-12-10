@@ -8,7 +8,7 @@ server: apt_packages fish rust
 
 $(BREW):
 	@echo Installing Homebrew
-	@ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"
+	@bash -c "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh`"
 
 $(BREW_BUNDLE): $(BREW)
 	brew tap Homebrew/bundle
