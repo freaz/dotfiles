@@ -1,6 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "window.autoDetectColorScheme": true,
+  "window.newWindowDimensions": "inherit",
   "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "GitHub Light Default",
   "workbench.preferredLightColorTheme": "GitHub Light Default",
