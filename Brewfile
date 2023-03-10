@@ -56,7 +56,7 @@ cask 'signal'
 cask 'spotify'
 cask 'tg-pro'
 cask 'visual-studio-code'
-cask 'zoomus'
+cask 'zoom'
 
 mas 'Bear', id: 1091189122
 mas 'Kindle', id: 405399194
