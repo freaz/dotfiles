@@ -3,8 +3,8 @@ set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
 
 # Setup paths
-set -x PATH /usr/local/sbin $PATH
-set -x PATH $HOME/.cargo/bin $PATH
+fish_add_path /opt/homebrew/sbin
+fish_add_path $HOME/.cargo/bin
 
 # Credentials
 set -l LOCAL_FISH $HOME/.local.fish
