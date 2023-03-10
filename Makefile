@@ -1,5 +1,5 @@
-BREW=/usr/local/bin/brew
-BREW_BUNDLE=/usr/local/Homebrew/Library/Taps/homebrew/homebrew-bundle
+BREW=/opt/homebrew/bin/brew
+BREW_BUNDLE=/opt/homebrew/Library/Taps/homebrew/homebrew-bundle
 VSCODE_CONF=~/Library/Application\ Support/Code/User
 GPG_AGENT=~/.gnupg/gpg-agent.conf
 
@@ -9,6 +9,8 @@ server: apt_packages fish rust
 $(BREW):
 	@echo Installing Homebrew
 	@bash -c "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh`"
+	@eval "$(/opt/homebrew/bin/brew shellenv)"
+	set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
 
 $(BREW_BUNDLE): $(BREW)
 	brew tap Homebrew/bundle
@@ -25,9 +27,9 @@ $(VSCODE_CONF):
 
 .PHONY: fish
 fish:
-	@echo /usr/local/bin/fish | sudo tee -a /etc/shells
+	@echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
 	@chsh -s $(shell which fish)
-	@fish -c fisher
+	@fish -c fisher update
 
 .PHONY: homebrew_packages
 homebrew_packages: $(BREW_BUNDLE)
