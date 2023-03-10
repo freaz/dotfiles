@@ -2,12 +2,14 @@ bradlc.vscode-tailwindcss
 cschleiden.vscode-github-actions
 dbaeumer.vscode-eslint
 EditorConfig.EditorConfig
+GitHub.copilot
 GitHub.github-vscode-theme
 GraphQL.vscode-graphql
 GraphQL.vscode-graphql-syntax
 mikestead.dotenv
 ms-azuretools.vscode-docker
 ms-python.python
+rebornix.ruby
 rust-lang.rust-analyzer
 superfaceai.superface-language-client-vscode
 waderyan.gitblame

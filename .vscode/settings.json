@@ -44,6 +44,13 @@
       "icon": "terminal-tmux"
     }
   },
+  // Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true
+  },
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
@@ -51,8 +58,6 @@
     "vue-html": "html",
     "vue": "html"
   },
-  // GitHub
-  "githubPullRequests.fileListLayout": "flat",
   // ESLint
   "eslint.format.enable": true,
   // Language specific settings
@@ -68,5 +73,8 @@
   },
   "[css][scss][less]": {
     "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[python]": {
+    "editor.formatOnType": true
   }
 }
