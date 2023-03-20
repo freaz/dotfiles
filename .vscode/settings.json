@@ -48,8 +48,8 @@
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
-    "plaintext": false,
-    "markdown": true
+    "markdown": true,
+    "plaintext": false
   },
   // Emmet
   "emmet.triggerExpansionOnTab": true,
@@ -61,6 +61,14 @@
   // ESLint
   "eslint.format.enable": true,
   // Language specific settings
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "*.provider.json"
+      ],
+      "url": "https://raw.githubusercontent.com/superfaceai/ast-js/main/src/interfaces/providerjson/providerjson.schema.json"
+    }
+  ],
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
