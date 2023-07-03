@@ -37,7 +37,8 @@
       "icon": "terminal-bash"
     },
     "fish": {
-      "path": "/usr/local/bin/fish"
+      "path": "/usr/local/bin/fish",
+      "icon": "terminal-bash"
     },
     "tmux": {
       "path": "tmux",
@@ -45,11 +46,9 @@
     }
   },
   // Copilot
+  "github.copilot.editor.enableAutoCompletions": false,
   "github.copilot.enable": {
-    "*": true,
-    "yaml": true,
-    "markdown": true,
-    "plaintext": false
+    "*": true
   },
   // Emmet
   "emmet.triggerExpansionOnTab": true,
@@ -61,14 +60,6 @@
   // ESLint
   "eslint.format.enable": true,
   // Language specific settings
-  "json.schemas": [
-    {
-      "fileMatch": [
-        "*.provider.json"
-      ],
-      "url": "https://raw.githubusercontent.com/superfaceai/ast-js/main/src/interfaces/providerjson/providerjson.schema.json"
-    }
-  ],
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
@@ -84,5 +75,5 @@
   },
   "[python]": {
     "editor.formatOnType": true
-  }
+  },
 }
