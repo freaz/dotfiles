@@ -31,13 +31,14 @@
   // Terminal
   "terminal.integrated.fontSize": 15,
   "terminal.external.osxExec": "/Applications/iTerm.app",
+  "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.profiles.osx": {
-    "bash": {
-      "path": "bash",
+    "fish": {
+      "path": "fish",
       "icon": "terminal-bash"
     },
-    "fish": {
-      "path": "/usr/local/bin/fish",
+    "bash": {
+      "path": "bash",
       "icon": "terminal-bash"
     },
     "tmux": {
@@ -48,7 +49,10 @@
   // Copilot
   "github.copilot.editor.enableAutoCompletions": false,
   "github.copilot.enable": {
-    "*": true
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
   },
   // Emmet
   "emmet.triggerExpansionOnTab": true,
@@ -72,8 +76,5 @@
   },
   "[css][scss][less]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "[python]": {
-    "editor.formatOnType": true
-  },
+  }
 }
