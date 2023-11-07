@@ -9,7 +9,7 @@ GraphQL.vscode-graphql-syntax
 mikestead.dotenv
 ms-azuretools.vscode-docker
 ms-python.python
-rebornix.ruby
 rust-lang.rust-analyzer
+Shopify.ruby-lsp
 superfaceai.superface-language-client-vscode
 waderyan.gitblame
