@@ -11,6 +11,7 @@ brew 'bun'
 brew 'deno'
 brew 'doctl'
 brew 'fish'
+brew 'flyctl'
 brew 'gh'
 brew 'git-extras'
 brew 'git'
@@ -69,11 +70,10 @@ mas 'Kindle', id: 405399194
 mas 'LanguageTool', id: 1534275760
 mas 'Magnet', id: 441258766
 mas 'MindNode', id: 1289197285
-mas 'MoneyWiz', id: 1511185140
 mas 'Pixelmator', id: 407963104
 mas 'Playgrounds', id: 1496833156
 mas 'Slack', id: 803453959
 mas 'The Unarchiver', id: 425424353
 mas 'Things 3', id: 904280696
-mas 'WhatsApp', id: 1147396723
+mas 'WhatsApp', id: 310633997
 mas 'XCode', id: 497799835
