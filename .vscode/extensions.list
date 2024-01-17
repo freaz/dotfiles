@@ -1,14 +1,15 @@
 bradlc.vscode-tailwindcss
-cschleiden.vscode-github-actions
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 EditorConfig.EditorConfig
 GitHub.copilot
 GitHub.github-vscode-theme
+GitHub.vscode-github-actions
 GraphQL.vscode-graphql
 GraphQL.vscode-graphql-syntax
 mikestead.dotenv
 ms-azuretools.vscode-docker
+ms-vscode.cpptools
 ms-python.python
 rust-lang.rust-analyzer
 Shopify.ruby-lsp
