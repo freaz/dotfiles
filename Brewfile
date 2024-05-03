@@ -1,6 +1,5 @@
 tap 'heroku/brew'
 tap 'homebrew/bundle'
-tap 'homebrew/cask'
 tap 'ubuntu/microk8s'
 tap 'oven-sh/bun'
 
@@ -36,6 +35,7 @@ brew 'pinentry-mac'
 brew 'podman'
 brew 'php'
 brew 'pyenv'
+brew 'railway'
 brew 'rbenv'
 brew 'rustup-init'
 brew 'terraform'
@@ -68,7 +68,6 @@ cask 'zoom'
 
 mas 'Bear', id: 1091189122
 mas 'Kindle', id: 405399194
-mas 'LanguageTool', id: 1534275760
 mas 'Magnet', id: 441258766
 mas 'MindNode', id: 1289197285
 mas 'Pixelmator', id: 407963104
