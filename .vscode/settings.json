@@ -2,8 +2,8 @@
 {
   "window.autoDetectColorScheme": true,
   "window.newWindowDimensions": "inherit",
+  "window.confirmBeforeClose": "keyboardOnly",
   "workbench.editor.enablePreview": false,
-  "workbench.colorTheme": "GitHub Light Default",
   "workbench.preferredLightColorTheme": "GitHub Light Default",
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   // Editor
@@ -18,7 +18,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "editor.renderControlCharacters": true,
   "editor.minimap.enabled": false,
@@ -26,11 +26,13 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.fontLigatures": true,
+  "editor.unicodeHighlight.ambiguousCharacters": true,
   // VCS
   "git.allowForcePush": true,
+  "scm.showHistoryGraph": true,
   // Terminal
-  "terminal.integrated.fontSize": 15,
   "terminal.external.osxExec": "/Applications/iTerm.app",
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.profiles.osx": {
     "fish": {
@@ -47,12 +49,9 @@
     }
   },
   // Copilot
-  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": false
+    "*": true
   },
   // Emmet
   "emmet.triggerExpansionOnTab": true,
@@ -76,5 +75,8 @@
   },
   "[css][scss][less]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
