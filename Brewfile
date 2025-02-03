@@ -48,6 +48,7 @@ brew 'wget'
 brew 'yq'
 
 cask '1password'
+cask 'cursor'
 cask 'discord'
 cask 'docker'
 cask 'firefox'
