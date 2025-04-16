@@ -27,9 +27,10 @@
   "editor.guides.bracketPairs": true,
   "editor.fontLigatures": true,
   "editor.unicodeHighlight.ambiguousCharacters": true,
+  "editor.accessibilitySupport": "off",
   // VCS
   "git.allowForcePush": true,
-  "scm.showHistoryGraph": true,
+  "githubPullRequests.pullBranch": "never",
   // Terminal
   "terminal.external.osxExec": "/Applications/iTerm.app",
   "terminal.integrated.fontSize": 15,
@@ -51,8 +52,10 @@
   // Copilot
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
-    "*": true
+    "*": true,
+    "markdown": true
   },
+  "chat.agent.enabled": true,
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
@@ -67,16 +70,13 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
   },
-  "[javascript][typescript][javascriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  "[javascript][typescript][javascriptreact][typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json][jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[css][scss][less]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  }
 }

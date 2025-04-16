@@ -59,7 +59,6 @@ cask 'postico'
 cask 'signal'
 cask 'spotify'
 cask 'tg-pro'
-cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'zoom'
 
