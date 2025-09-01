@@ -50,12 +50,12 @@
     }
   },
   // Copilot
-  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "*": true,
     "markdown": true
   },
   "chat.agent.enabled": true,
+  "chat.promptFiles": true,
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
@@ -78,5 +78,6 @@
   },
   "[css][scss][less]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  }
+  },
+  "github.copilot.nextEditSuggestions.enabled": true
 }
