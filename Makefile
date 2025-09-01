@@ -4,7 +4,7 @@ VSCODE_CONF=~/Library/Application\ Support/Code/User
 GPG_AGENT=~/.gnupg/gpg-agent.conf
 
 station: homebrew_packages fish $(VSCODE_CONF) $(GPG_AGENT)
-server: apt_packages fish rust
+server: apt_packages fish
 
 $(BREW):
 	@echo Installing Homebrew
@@ -42,11 +42,7 @@ apt_repositories:
 
 .PHONY: apt_packages
 apt_packages: apt_repositories
-	sudo apt install -y fish neovim curl git git-extras wget tmux python3 docker.io mosh rbenv build-essential universal-ctags
-
-.PHONY: rust
-rust:
-	@curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+	sudo apt install -y fish neovim curl git git-extras wget tmux docker.io mosh build-essential universal-ctags
 
 $(GPG_AGENT):
 	echo "pinentry-program /usr/local/bin/pinentry-mac" >> $(GPG_AGENT)
