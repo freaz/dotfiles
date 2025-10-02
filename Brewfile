@@ -63,6 +63,7 @@ cask 'signal'
 cask 'spotify'
 cask 'tg-pro'
 cask 'visual-studio-code'
+cask 'warp'
 cask 'zoom'
 
 mas 'Bear', id: 1091189122
