@@ -13,7 +13,7 @@ if test -f $LOCAL_FISH
 end
 
 # Setup editor
-set -x EDITOR nvim
+set -x EDITOR vim
 
 # Aliases
 alias home="git --work-tree=$HOME --git-dir=$HOME/.files.git"
