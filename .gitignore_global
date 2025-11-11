@@ -1,3 +1,5 @@
+.workdir/
+
 # Vim
 .*.sw[a-z]
 *.un~
