@@ -56,6 +56,10 @@
   },
   "chat.agent.enabled": true,
   "chat.promptFiles": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.selectedCompletionModel": "",
+  // Claude Code
+  "claudeCode.selectedModel": "default",
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
@@ -78,6 +82,5 @@
   },
   "[css][scss][less]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "github.copilot.nextEditSuggestions.enabled": true
+  }
 }

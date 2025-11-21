@@ -1,13 +1,14 @@
+anthropic.claude-code
 bradlc.vscode-tailwindcss
 dbaeumer.vscode-eslint
+denoland.vscode-deno
 editorconfig.editorconfig
 esbenp.prettier-vscode
-github.copilot
 github.copilot-chat
 github.github-vscode-theme
 github.vscode-github-actions
 mikestead.dotenv
-ms-azuretools.vscode-docker
+ms-azuretools.vscode-containers
 ms-python.debugpy
 ms-python.python
 ms-toolsai.jupyter
@@ -17,6 +18,7 @@ ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
 ms-vscode.cpptools
 ms-ossdata.vscode-pgsql
+openai.chatgpt
 prisma.prisma
 rust-lang.rust-analyzer
-superfaceai.superface-language-client-vscode
+swiftlang.swift-vscode
