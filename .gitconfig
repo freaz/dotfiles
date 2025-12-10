@@ -4,7 +4,8 @@
   signingkey = AB7B615C18912E9C
 [core]
   editor = vim
-  excludesfile = /Users/freaz/.gitignore_global
+  excludesfile = ~/.gitignore_global
+  pager = less
 [credential]
   helper = osxkeychain
 [commit]
@@ -13,6 +14,8 @@
   user = freaz
 [pull]
   ff = only
+[init]
+  defaultBranch = main
 [alias]
   st = status
   co = checkout
@@ -27,14 +30,3 @@
   ls = ls-files
   gpg = config user.signingkey
   email = config user.email
-[init]
-  defaultBranch = main
-[merge]
-  tool = code-insiders
-[mergetool "code-insiders"]
-  cmd = code-insiders --wait --merge $REMOTE $LOCAL $BASE $MERGED
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true

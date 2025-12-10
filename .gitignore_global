@@ -1,4 +1,9 @@
+# My workdir in projects
 .workdir/
+
+# Agents - I want to use force add
+.claude
+CLAUDE.md
 
 # Vim
 .*.sw[a-z]
@@ -8,6 +13,9 @@ Session.vim
 # IDEs
 .vscode
 .idea
+
+# Tool configs
+mise.toml
 
 # OS X
 .DS_Store
