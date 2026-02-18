@@ -18,7 +18,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
+    "source.fixAll": "explicit",
   },
   "editor.renderControlCharacters": true,
   "editor.minimap.enabled": false,
@@ -38,49 +38,54 @@
   "terminal.integrated.profiles.osx": {
     "fish": {
       "path": "fish",
-      "icon": "terminal-bash"
+      "icon": "terminal-bash",
     },
     "bash": {
       "path": "bash",
-      "icon": "terminal-bash"
+      "icon": "terminal-bash",
     },
     "tmux": {
       "path": "tmux",
-      "icon": "terminal-tmux"
-    }
+      "icon": "terminal-tmux",
+    },
   },
   // Copilot
   "github.copilot.enable": {
     "*": true,
-    "markdown": true
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
   },
-  "chat.agent.enabled": true,
-  "chat.promptFiles": true,
   "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.selectedCompletionModel": "",
+  // AI Chat
+  "chat.agent.enabled": true,
+  "chat.promptFiles": true,
+  "chat.viewSessions.orientation": "stacked",
   // Claude Code
   "claudeCode.selectedModel": "default",
+  "claudeCode.preferredLocation": "sidebar",
   // Emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.syntaxProfiles": {
     "javascript": "jsx",
     "vue-html": "html",
-    "vue": "html"
+    "vue": "html",
   },
   // ESLint
   "eslint.format.enable": true,
   // Language specific settings
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80
+    "editor.wordWrapColumn": 80,
   },
   "[javascript][typescript][javascriptreact][typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json][jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "vscode.json-language-features",
   },
   "[css][scss][less]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  }
+    "editor.defaultFormatter": "vscode.css-language-features",
+  },
 }
